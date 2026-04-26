@@ -1,0 +1,25 @@
+{
+  "task": "graphify-openclaw",
+  "input_path": "openclaw",
+  "created_at": "2026-04-10T03:00:00Z",
+  "total_files_processed": 12035,
+  "graph_stats": {
+    "total_nodes": 56813,
+    "total_edges": 80102,
+    "total_hyperedges": 163,
+    "communities": 7111
+  },
+  "extraction": {
+    "ast_nodes": 59635,
+    "semantic_nodes": 1655,
+    "semantic_chunks": 53,
+    "chunks_completed": 53,
+    "chunks_failed": 0
+  },
+  "outputs": [
+    "graphify-out/graph.json",
+    "graphify-out/graph.html",
+    "graphify-out/GRAPH_REPORT.md",
+    "graphify-out/.graphify_progress.json"
+  ]
+}

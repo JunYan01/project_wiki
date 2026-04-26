@@ -1,0 +1,9 @@
+[submodule "graphify"]
+	path = graphify
+	url = https://github.com/safishamsi/graphify.git
+[submodule "hermes-agent"]
+	path = hermes-agent
+	url = git@github.com:NousResearch/hermes-agent.git
+[submodule "openclaw"]
+	path = openclaw
+	url = git@github.com:openclaw/openclaw.git

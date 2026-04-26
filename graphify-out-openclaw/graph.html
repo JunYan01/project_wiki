@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OpenClaw Knowledge Graph — Community Overview</title>
+<style>
+  body { margin: 0; background: #0a0a0f; font-family: -apple-system, system-ui, sans-serif; color: #e0e0e0; }
+  #canvas { width: 100vw; height: 100vh; }
+  .tooltip { position: absolute; background: #1a1a2e; border: 1px solid #444; border-radius: 8px; padding: 10px 14px; font-size: 13px; pointer-events: none; display: none; max-width: 300px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+  .tooltip h3 { margin: 0 0 4px; color: #88aaff; font-size: 14px; }
+  .tooltip .stat { color: #999; font-size: 12px; }
+  #header { position: absolute; top: 20px; left: 24px; z-index: 10; }
+  #header h1 { font-size: 20px; color: #88aaff; margin: 0; }
+  #header p { font-size: 12px; color: #666; margin: 4px 0 0; }
+  #legend { position: absolute; bottom: 20px; right: 24px; background: #1a1a2e; border: 1px solid #333; border-radius: 8px; padding: 12px 16px; font-size: 12px; }
+  #legend h3 { margin: 0 0 8px; color: #88aaff; font-size: 13px; }
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div id="header">
+  <h1>OpenClaw Knowledge Graph</h1>
+  <p>50 communities &middot; 20770 nodes &middot; Top inter-community links</p>
+</div>
+<div class="tooltip" id="tooltip"></div>
+<script>
+const nodes = [{"id": "comm_0", "label": "Access Control & Auth", "size": 2018, "community": 0}, {"id": "comm_1", "label": "Swift Foundation", "size": 1996, "community": 1}, {"id": "comm_2", "label": "ACP Runtime", "size": 947, "community": 2}, {"id": "comm_3", "label": "Channel Entry", "size": 837, "community": 3}, {"id": "comm_4", "label": "UI Settings", "size": 680, "community": 4}, {"id": "comm_5", "label": "Agent Sessions", "size": 647, "community": 5}, {"id": "comm_6", "label": "Community 6", "size": 614, "community": 6}, {"id": "comm_7", "label": "Test Suites", "size": 581, "community": 7}, {"id": "comm_8", "label": "Message Body", "size": 536, "community": 8}, {"id": "comm_9", "label": "Community 9", "size": 515, "community": 9}, {"id": "comm_10", "label": "CLI Installer", "size": 505, "community": 10}, {"id": "comm_11", "label": "Community 11", "size": 482, "community": 11}, {"id": "comm_12", "label": "Channel Setup", "size": 471, "community": 12}, {"id": "comm_13", "label": "Approval Auth", "size": 441, "community": 13}, {"id": "comm_14", "label": "CDP Helpers", "size": 440, "community": 14}, {"id": "comm_15", "label": "Chat Models", "size": 436, "community": 15}, {"id": "comm_16", "label": "Audio Conversion", "size": 408, "community": 16}, {"id": "comm_17", "label": "UI Bootstrap", "size": 387, "community": 17}, {"id": "comm_18", "label": "Community 18", "size": 386, "community": 18}, {"id": "comm_19", "label": "Community 19", "size": 373, "community": 19}, {"id": "comm_20", "label": "Embeddings", "size": 368, "community": 20}, {"id": "comm_21", "label": "Community 21", "size": 362, "community": 21}, {"id": "comm_22", "label": "Action Runtime", "size": 357, "community": 22}, {"id": "comm_23", "label": "Community 23", "size": 349, "community": 23}, {"id": "comm_24", "label": "Community 24", "size": 335, "community": 24}, {"id": "comm_25", "label": "Interactions", "size": 334, "community": 25}, {"id": "comm_26", "label": "Community 26", "size": 332, "community": 26}, {"id": "comm_27", "label": "Dreaming", "size": 328, "community": 27}, {"id": "comm_28", "label": "Plugins", "size": 323, "community": 28}, {"id": "comm_29", "label": "Community 29", "size": 307, "community": 29}, {"id": "comm_30", "label": "Community 30", "size": 292, "community": 30}, {"id": "comm_31", "label": "Configuration", "size": 247, "community": 31}, {"id": "comm_32", "label": "Anthropic Transport", "size": 232, "community": 32}, {"id": "comm_33", "label": "Agent Runner", "size": 223, "community": 33}, {"id": "comm_34", "label": "Community 34", "size": 221, "community": 34}, {"id": "comm_36", "label": "Community 36", "size": 204, "community": 36}, {"id": "comm_35", "label": "API Client", "size": 204, "community": 35}, {"id": "comm_37", "label": "Community 37", "size": 195, "community": 37}, {"id": "comm_38", "label": "Community 38", "size": 190, "community": 38}, {"id": "comm_39", "label": "Community 39", "size": 182, "community": 39}, {"id": "comm_40", "label": "Community 40", "size": 181, "community": 40}, {"id": "comm_41", "label": "Community 41", "size": 170, "community": 41}, {"id": "comm_42", "label": "Gateway Connection", "size": 160, "community": 42}, {"id": "comm_43", "label": "Community 43", "size": 157, "community": 43}, {"id": "comm_44", "label": "Community 44", "size": 149, "community": 44}, {"id": "comm_45", "label": "Community 45", "size": 147, "community": 45}, {"id": "comm_46", "label": "Community 46", "size": 138, "community": 46}, {"id": "comm_47", "label": "Community 47", "size": 137, "community": 47}, {"id": "comm_48", "label": "Community 48", "size": 128, "community": 48}, {"id": "comm_49", "label": "Community 49", "size": 118, "community": 49}];
+const links = [{"source": "comm_0", "target": "comm_2", "weight": 56}, {"source": "comm_1", "target": "comm_4", "weight": 30}, {"source": "comm_1", "target": "comm_9", "weight": 27}, {"source": "comm_11", "target": "comm_0", "weight": 24}, {"source": "comm_0", "target": "comm_13", "weight": 17}, {"source": "comm_11", "target": "comm_2", "weight": 16}, {"source": "comm_8", "target": "comm_0", "weight": 15}, {"source": "comm_0", "target": "comm_30", "weight": 15}, {"source": "comm_1", "target": "comm_37", "weight": 15}, {"source": "comm_13", "target": "comm_0", "weight": 14}, {"source": "comm_1", "target": "comm_10", "weight": 14}, {"source": "comm_22", "target": "comm_0", "weight": 14}, {"source": "comm_3", "target": "comm_2", "weight": 13}, {"source": "comm_25", "target": "comm_0", "weight": 13}, {"source": "comm_22", "target": "comm_2", "weight": 12}, {"source": "comm_12", "target": "comm_0", "weight": 11}, {"source": "comm_1", "target": "comm_42", "weight": 11}, {"source": "comm_1", "target": "comm_15", "weight": 11}, {"source": "comm_30", "target": "comm_2", "weight": 11}, {"source": "comm_13", "target": "comm_2", "weight": 10}, {"source": "comm_16", "target": "comm_2", "weight": 10}, {"source": "comm_0", "target": "comm_33", "weight": 10}, {"source": "comm_3", "target": "comm_0", "weight": 9}, {"source": "comm_0", "target": "comm_22", "weight": 9}, {"source": "comm_0", "target": "comm_29", "weight": 9}, {"source": "comm_23", "target": "comm_0", "weight": 9}, {"source": "comm_18", "target": "comm_0", "weight": 9}, {"source": "comm_19", "target": "comm_2", "weight": 9}, {"source": "comm_18", "target": "comm_2", "weight": 9}, {"source": "comm_4", "target": "comm_1", "weight": 9}, {"source": "comm_3", "target": "comm_19", "weight": 8}, {"source": "comm_11", "target": "comm_22", "weight": 8}, {"source": "comm_1", "target": "comm_28", "weight": 8}, {"source": "comm_5", "target": "comm_2", "weight": 8}, {"source": "comm_8", "target": "comm_2", "weight": 7}, {"source": "comm_31", "target": "comm_1", "weight": 7}, {"source": "comm_12", "target": "comm_2", "weight": 7}, {"source": "comm_0", "target": "comm_11", "weight": 7}, {"source": "comm_0", "target": "comm_26", "weight": 7}, {"source": "comm_37", "target": "comm_1", "weight": 7}, {"source": "comm_0", "target": "comm_7", "weight": 7}, {"source": "comm_29", "target": "comm_0", "weight": 7}, {"source": "comm_5", "target": "comm_0", "weight": 7}, {"source": "comm_0", "target": "comm_5", "weight": 7}, {"source": "comm_10", "target": "comm_1", "weight": 7}, {"source": "comm_3", "target": "comm_16", "weight": 6}, {"source": "comm_12", "target": "comm_18", "weight": 6}, {"source": "comm_0", "target": "comm_18", "weight": 6}, {"source": "comm_0", "target": "comm_23", "weight": 6}, {"source": "comm_11", "target": "comm_8", "weight": 6}, {"source": "comm_30", "target": "comm_0", "weight": 6}, {"source": "comm_40", "target": "comm_0", "weight": 6}, {"source": "comm_29", "target": "comm_2", "weight": 6}, {"source": "comm_26", "target": "comm_2", "weight": 6}, {"source": "comm_11", "target": "comm_18", "weight": 6}, {"source": "comm_23", "target": "comm_2", "weight": 6}, {"source": "comm_22", "target": "comm_5", "weight": 6}, {"source": "comm_20", "target": "comm_16", "weight": 6}, {"source": "comm_11", "target": "comm_16", "weight": 5}, {"source": "comm_12", "target": "comm_23", "weight": 5}, {"source": "comm_0", "target": "comm_40", "weight": 5}, {"source": "comm_0", "target": "comm_3", "weight": 5}, {"source": "comm_11", "target": "comm_23", "weight": 5}, {"source": "comm_25", "target": "comm_2", "weight": 5}, {"source": "comm_19", "target": "comm_0", "weight": 5}, {"source": "comm_19", "target": "comm_26", "weight": 5}, {"source": "comm_8", "target": "comm_3", "weight": 4}, {"source": "comm_8", "target": "comm_5", "weight": 4}, {"source": "comm_3", "target": "comm_44", "weight": 4}, {"source": "comm_12", "target": "comm_26", "weight": 4}, {"source": "comm_12", "target": "comm_19", "weight": 4}, {"source": "comm_12", "target": "comm_8", "weight": 4}, {"source": "comm_35", "target": "comm_16", "weight": 4}, {"source": "comm_23", "target": "comm_8", "weight": 4}, {"source": "comm_34", "target": "comm_0", "weight": 4}, {"source": "comm_30", "target": "comm_16", "weight": 4}, {"source": "comm_17", "target": "comm_0", "weight": 4}, {"source": "comm_16", "target": "comm_0", "weight": 4}, {"source": "comm_2", "target": "comm_0", "weight": 4}, {"source": "comm_29", "target": "comm_23", "weight": 4}, {"source": "comm_20", "target": "comm_0", "weight": 4}, {"source": "comm_2", "target": "comm_27", "weight": 4}, {"source": "comm_8", "target": "comm_23", "weight": 3}, {"source": "comm_11", "target": "comm_21", "weight": 3}, {"source": "comm_26", "target": "comm_16", "weight": 3}, {"source": "comm_12", "target": "comm_22", "weight": 3}, {"source": "comm_12", "target": "comm_3", "weight": 3}, {"source": "comm_0", "target": "comm_39", "weight": 3}, {"source": "comm_0", "target": "comm_19", "weight": 3}, {"source": "comm_0", "target": "comm_16", "weight": 3}, {"source": "comm_1", "target": "comm_7", "weight": 3}, {"source": "comm_1", "target": "comm_43", "weight": 3}, {"source": "comm_35", "target": "comm_2", "weight": 3}, {"source": "comm_40", "target": "comm_8", "weight": 3}, {"source": "comm_40", "target": "comm_2", "weight": 3}, {"source": "comm_23", "target": "comm_18", "weight": 3}, {"source": "comm_11", "target": "comm_33", "weight": 3}, {"source": "comm_25", "target": "comm_26", "weight": 3}, {"source": "comm_19", "target": "comm_8", "weight": 3}, {"source": "comm_30", "target": "comm_13", "weight": 3}, {"source": "comm_39", "target": "comm_0", "weight": 3}, {"source": "comm_30", "target": "comm_34", "weight": 3}, {"source": "comm_18", "target": "comm_8", "weight": 3}, {"source": "comm_45", "target": "comm_0", "weight": 3}, {"source": "comm_36", "target": "comm_2", "weight": 3}, {"source": "comm_2", "target": "comm_3", "weight": 3}, {"source": "comm_48", "target": "comm_20", "weight": 3}, {"source": "comm_7", "target": "comm_10", "weight": 3}, {"source": "comm_15", "target": "comm_1", "weight": 3}, {"source": "comm_9", "target": "comm_1", "weight": 3}, {"source": "comm_24", "target": "comm_5", "weight": 3}, {"source": "comm_8", "target": "comm_22", "weight": 2}, {"source": "comm_8", "target": "comm_13", "weight": 2}, {"source": "comm_8", "target": "comm_44", "weight": 2}, {"source": "comm_11", "target": "comm_14", "weight": 2}, {"source": "comm_28", "target": "comm_9", "weight": 2}, {"source": "comm_27", "target": "comm_2", "weight": 2}, {"source": "comm_13", "target": "comm_5", "weight": 2}, {"source": "comm_26", "target": "comm_35", "weight": 2}, {"source": "comm_3", "target": "comm_8", "weight": 2}, {"source": "comm_3", "target": "comm_5", "weight": 2}, {"source": "comm_3", "target": "comm_47", "weight": 2}, {"source": "comm_40", "target": "comm_25", "weight": 2}, {"source": "comm_36", "target": "comm_27", "weight": 2}, {"source": "comm_11", "target": "comm_26", "weight": 2}, {"source": "comm_0", "target": "comm_36", "weight": 2}, {"source": "comm_0", "target": "comm_34", "weight": 2}, {"source": "comm_0", "target": "comm_25", "weight": 2}, {"source": "comm_0", "target": "comm_12", "weight": 2}, {"source": "comm_0", "target": "comm_45", "weight": 2}, {"source": "comm_1", "target": "comm_46", "weight": 2}, {"source": "comm_1", "target": "comm_26", "weight": 2}, {"source": "comm_35", "target": "comm_0", "weight": 2}, {"source": "comm_35", "target": "comm_19", "weight": 2}, {"source": "comm_35", "target": "comm_3", "weight": 2}, {"source": "comm_11", "target": "comm_3", "weight": 2}, {"source": "comm_40", "target": "comm_19", "weight": 2}, {"source": "comm_16", "target": "comm_5", "weight": 2}, {"source": "comm_22", "target": "comm_16", "weight": 2}, {"source": "comm_26", "target": "comm_22", "weight": 2}, {"source": "comm_26", "target": "comm_0", "weight": 2}, {"source": "comm_18", "target": "comm_26", "weight": 2}, {"source": "comm_23", "target": "comm_19", "weight": 2}, {"source": "comm_23", "target": "comm_21", "weight": 2}, {"source": "comm_25", "target": "comm_18", "weight": 2}, {"source": "comm_25", "target": "comm_8", "weight": 2}, {"source": "comm_25", "target": "comm_21", "weight": 2}, {"source": "comm_25", "target": "comm_16", "weight": 2}, {"source": "comm_25", "target": "comm_13", "weight": 2}, {"source": "comm_47", "target": "comm_7", "weight": 2}, {"source": "comm_47", "target": "comm_2", "weight": 2}, {"source": "comm_19", "target": "comm_5", "weight": 2}, {"source": "comm_47", "target": "comm_5", "weight": 2}, {"source": "comm_22", "target": "comm_26", "weight": 2}, {"source": "comm_18", "target": "comm_23", "weight": 2}, {"source": "comm_30", "target": "comm_3", "weight": 2}, {"source": "comm_30", "target": "comm_7", "weight": 2}, {"source": "comm_17", "target": "comm_2", "weight": 2}, {"source": "comm_35", "target": "comm_8", "weight": 2}, {"source": "comm_39", "target": "comm_16", "weight": 2}, {"source": "comm_39", "target": "comm_2", "weight": 2}, {"source": "comm_7", "target": "comm_0", "weight": 2}, {"source": "comm_30", "target": "comm_33", "weight": 2}, {"source": "comm_39", "target": "comm_21", "weight": 2}, {"source": "comm_32", "target": "comm_0", "weight": 2}, {"source": "comm_36", "target": "comm_11", "weight": 2}, {"source": "comm_32", "target": "comm_2", "weight": 2}, {"source": "comm_30", "target": "comm_26", "weight": 2}, {"source": "comm_0", "target": "comm_8", "weight": 2}, {"source": "comm_38", "target": "comm_2", "weight": 2}, {"source": "comm_27", "target": "comm_0", "weight": 2}, {"source": "comm_27", "target": "comm_16", "weight": 2}, {"source": "comm_18", "target": "comm_21", "weight": 2}, {"source": "comm_25", "target": "comm_1", "weight": 2}, {"source": "comm_25", "target": "comm_42", "weight": 2}, {"source": "comm_14", "target": "comm_21", "weight": 2}, {"source": "comm_2", "target": "comm_20", "weight": 2}, {"source": "comm_2", "target": "comm_25", "weight": 2}, {"source": "comm_17", "target": "comm_7", "weight": 2}, {"source": "comm_7", "target": "comm_42", "weight": 2}, {"source": "comm_7", "target": "comm_46", "weight": 2}, {"source": "comm_9", "target": "comm_42", "weight": 2}, {"source": "comm_9", "target": "comm_10", "weight": 2}, {"source": "comm_24", "target": "comm_3", "weight": 2}, {"source": "comm_24", "target": "comm_9", "weight": 1}, {"source": "comm_8", "target": "comm_26", "weight": 1}, {"source": "comm_8", "target": "comm_12", "weight": 1}, {"source": "comm_8", "target": "comm_30", "weight": 1}, {"source": "comm_8", "target": "comm_34", "weight": 1}, {"source": "comm_8", "target": "comm_21", "weight": 1}, {"source": "comm_8", "target": "comm_40", "weight": 1}, {"source": "comm_8", "target": "comm_32", "weight": 1}, {"source": "comm_28", "target": "comm_1", "weight": 1}, {"source": "comm_28", "target": "comm_20", "weight": 1}, {"source": "comm_28", "target": "comm_30", "weight": 1}, {"source": "comm_28", "target": "comm_3", "weight": 1}, {"source": "comm_28", "target": "comm_4", "weight": 1}, {"source": "comm_28", "target": "comm_43", "weight": 1}, {"source": "comm_28", "target": "comm_42", "weight": 1}, {"source": "comm_45", "target": "comm_2", "weight": 1}];
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const tooltip = document.getElementById('tooltip');
+
+let W, H;
+function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+resize();
+window.addEventListener('resize', resize);
+
+// Color palette for communities
+const colors = ['#4FC3F7','#81C784','#FFB74D','#E57373','#BA68C8','#4DD0E1','#AED581','#FF8A65','#F06292','#7986CB','#A1887F','#90A4AE','#FFD54F','#4DB6AC','#CE93D8','#80CBC4','#FFCC80','#BCAAA4','#B39DDB','#80DEEA','#C5E1A5','#EF9A9A','#9FA8DA','#FFF176','#A5D6A7','#EF5350','#42A5F5','#66BB6A','#FFA726','#AB47BC','#26C6DA','#9CCC65','#FF7043','#EC407A','#5C6BC0','#8D6E63','#78909C','#FFCA28','#26A69A','#AB47BC','#29B6F6','#9E9D24','#8E24AA','#00897B','#F4511E','#1565C0','#2E7D32','#EF6C00','#6A1B9A','#00695C'];
+
+nodes.forEach((n, i) => {
+  n.x = W/2 + (Math.random() - 0.5) * W * 0.6;
+  n.y = H/2 + (Math.random() - 0.5) * H * 0.6;
+  n.vx = 0; n.vy = 0;
+  n.radius = Math.max(8, Math.sqrt(n.size) * 1.5);
+  n.color = colors[i % colors.length];
+});
+
+// Build node index
+const nodeMap = {};
+nodes.forEach(n => nodeMap[n.id] = n);
+
+const dt = 0.3;
+const repulsion = 800;
+const attraction = 0.005;
+const damping = 0.92;
+const centering = 0.001;
+
+function simulate() {
+  // Repulsion
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i+1; j < nodes.length; j++) {
+      const dx = nodes[j].x - nodes[i].x;
+      const dy = nodes[j].y - nodes[i].y;
+      const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+      const f = repulsion / (dist * dist);
+      const fx = (dx / dist) * f;
+      const fy = (dy / dist) * f;
+      nodes[i].vx -= fx; nodes[i].vy -= fy;
+      nodes[j].vx += fx; nodes[j].vy += fy;
+    }
+  }
+  // Attraction (links)
+  links.forEach(l => {
+    const s = nodeMap[l.source]; const t = nodeMap[l.target];
+    if (!s || !t) return;
+    const dx = t.x - s.x; const dy = t.y - s.y;
+    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+    const f = dist * attraction * (l.weight || 1);
+    s.vx += (dx/dist)*f; s.vy += (dy/dist)*f;
+    t.vx -= (dx/dist)*f; t.vy -= (dy/dist)*f;
+  });
+  // Centering
+  nodes.forEach(n => { n.vx += (W/2 - n.x)*centering; n.vy += (H/2 - n.y)*centering; });
+  // Update
+  nodes.forEach(n => { n.vx *= damping; n.vy *= damping; n.x += n.vx * dt; n.y += n.vy * dt; });
+}
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+  // Links
+  links.forEach(l => {
+    const s = nodeMap[l.source]; const t = nodeMap[l.target];
+    if (!s || !t) return;
+    ctx.beginPath();
+    ctx.moveTo(s.x, s.y);
+    ctx.lineTo(t.x, t.y);
+    ctx.strokeStyle = 'rgba(100,130,200,' + Math.min(0.6, (l.weight||1)*0.05) + ')';
+    ctx.lineWidth = Math.min(3, (l.weight||1)*0.2);
+    ctx.stroke();
+  });
+  // Nodes
+  nodes.forEach(n => {
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, n.radius, 0, Math.PI*2);
+    ctx.fillStyle = n.color;
+    ctx.globalAlpha = 0.85;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    // Label
+    if (n.radius > 12) {
+      ctx.fillStyle = '#fff';
+      ctx.font = '10px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(n.label, n.x, n.y + n.radius + 14);
+    }
+  });
+}
+
+function frame() { simulate(); draw(); requestAnimationFrame(frame); }
+frame();
+
+// Hover
+canvas.addEventListener('mousemove', e => {
+  const mx = e.clientX, my = e.clientY;
+  let found = null;
+  nodes.forEach(n => {
+    const dx = mx - n.x, dy = my - n.y;
+    if (dx*dx + dy*dy < n.radius*n.radius*1.5) found = n;
+  });
+  if (found) {
+    tooltip.style.display = 'block';
+    tooltip.style.left = (mx + 16) + 'px';
+    tooltip.style.top = (my + 16) + 'px';
+    tooltip.innerHTML = '<h3>' + found.label + '</h3><div class="stat">' + found.size + ' nodes &middot; Community ' + found.community + '</div>';
+  } else {
+    tooltip.style.display = 'none';
+  }
+});
+
+// Drag
+let dragNode = null;
+canvas.addEventListener('mousedown', e => {
+  const mx = e.clientX, my = e.clientY;
+  nodes.forEach(n => {
+    const dx = mx - n.x, dy = my - n.y;
+    if (dx*dx + dy*dy < n.radius*n.radius*1.5) dragNode = n;
+  });
+});
+canvas.addEventListener('mousemove', e => {
+  if (dragNode) { dragNode.x = e.clientX; dragNode.y = e.clientY; dragNode.vx = 0; dragNode.vy = 0; }
+});
+canvas.addEventListener('mouseup', () => dragNode = null);
+</script>
+</body>
+</html>
