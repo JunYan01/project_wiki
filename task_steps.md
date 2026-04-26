@@ -1,5 +1,49 @@
 # Task Steps
 
+> **用途**：记录项目中所有已完成的工作步骤，供新 session 恢复上下文。
+> **更新时机**：每完成一个步骤后立即追加，保持同步。
+> **推广模式**：可复制本文件到任何项目，按以下模板填写。
+>
+> **模板**：
+> ```
+> ## <任务名称> (<开始日期>)
+> ### 1. <步骤标题>
+> - 目标：<做什么>
+> - 环境约束：<系统版本、工具版本、路径>
+> - 执行命令：<实际运行的命令>
+> - 结果：<产出文件、数据量、关键指标>
+> - 失败/踩坑记录：<遇到的错误和解决方案>
+>
+> ### 2. <下一个步骤> ...
+> ```
+>
+> **断点续处理规则**（适用于 graphify 等大规模分块任务）：
+> - 使用 JSON 进度文件追踪已完成的 chunk（如 `.graphify_progress.json`）
+> - 每个 chunk 的结果独立写入文件（如 `.chunk_result_N.json`）
+> - 合并脚本统一合并去重（如 `merge_chunk.py`）
+> - 并发度按需控制（串行=1 或并行=N）
+> - 每 chunk 完成后 compress 上下文，避免上下文溢出
+> - 不预读下一个 chunk 的内容
+
+**Claude Code 记忆迁移**（跨机器/新 session）：
+- 记忆文件位置：`~/.claude/projects/<项目绝对路径>/memory/`（不在项目 repo 内）
+- 方案 1：将 `memory/` 目录整体复制到新机器的对应路径
+- 方案 2：将关键上下文写入项目 repo 中的 `CLAUDE.md`（git pull 后自动生效）
+- 方案 3：在新 session 中手动 `/remember` 重建记忆
+- 注意：`task_steps.md` 本身已在 repo 中，可替代部分记忆功能
+
+---
+
+## Submodule 管理 (2026-04-26)
+
+- `graphify` → `https://github.com/safishamsi/graphify.git`
+- `hermes-agent` → `git@github.com:NousResearch/hermes-agent.git`
+- `openclaw` → `git@github.com:openclaw/openclaw.git`
+
+更新命令：`git submodule update --remote`
+
+---
+
 ## Graphify 安装 (2026-04-09)
 
 ### 1. 克隆仓库
