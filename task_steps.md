@@ -111,3 +111,37 @@ uv run graphify install
 ```
 
 将 graphify skill 注册到当前平台（Claude Code）。
+
+---
+
+## WORKFLOW.md 与 Submodule 更新 (2026-06-18)
+
+### 1. 创建 WORKFLOW.md
+- 目标：整理 project_wiki 工作流说明，供温习 / 新 session 恢复上下文
+- 结果：WORKFLOW.md（项目定位 / 目录结构 / submodule 工作流 / graphify 工作流 / 命令速查）
+
+### 2. 更新三个 submodule 到各仓库最新
+- 目标：openclaw / hermes-agent / graphify 拉到最新
+- hermes-agent、graphify：`git submodule update --remote` 成功（完整 fetch）
+- **openclaw 卡住的根因（踩坑记录）**：
+  - openclaw 是巨型仓库：41715 commits、1.6GB `.git`、单次 fetch pack 含 ~40 万对象
+  - `github.com` 被解析到中转 IP `44.0.0.89`（非官方段 `140.82.x` / `192.30.x` / `20.205.x`）
+  - 小请求（SSH 握手、`ssh -T` 认证）秒过，但 40 万对象的大 pack 经中转链路传输极易卡死
+  - 表现：`git index-pack` 进程 CPU 长期不动（ELAPSED 数分钟、CPU 仅几秒），`.git/objects/pack/` 出现数百 MB 临时 pack
+  - 误判教训：后台 fetch 任务的 exit code 可能是脚本**最后一条命令**的（如 `git status`=0），不代表 submodule update 成功；要看 `git submodule status` 的实际 commit
+- **解决：shallow fetch 只拉最新（不要历史）**
+  ```bash
+  git -C openclaw fetch --depth=1 origin main   # 默认分支用 symbolic-ref refs/remotes/origin/HEAD 查
+  git -C openclaw checkout FETCH_HEAD
+  ```
+  - 结果：openclaw `f4e6322` → `baa389e`，**几秒完成**（数据量从近 1GB 降到几十 MB）
+  - 已写入 WORKFLOW.md §4.4
+
+### 3. 其他变更
+- `.gitignore` 增加 `.obsidian/`（编辑器本地配置）
+- 新增 `agent_memory_system_by_ff/`（Agent 记忆系统教程 PDF：Mem0 / Letta / GBrain）
+- 修复 openclaw 子模块工作区 18 个 `CLAUDE.md` 被平台展开为普通文件（原本是指向 `AGENTS.md` 的 symlink），`git restore` 恢复
+- 提交：`ea9a588`、`f29af92`，已 push origin/main
+
+### 4. 待办（可选）
+- openclaw 本地 `.git` 仍有 1.6GB 旧历史（shallow 只浅拉了增量更新，没删旧历史）。若要彻底精简需额外清理（`git gc` / 删 `.git` 重浅 clone）——destructive，待确认。
