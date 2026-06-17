@@ -145,3 +145,8 @@ uv run graphify install
 
 ### 4. 待办（可选）
 - openclaw 本地 `.git` 仍有 1.6GB 旧历史（shallow 只浅拉了增量更新，没删旧历史）。若要彻底精简需额外清理（`git gc` / 删 `.git` 重浅 clone）——destructive，待确认。
+
+### 5. 添加 pi submodule
+- 新增 submodule：`https://github.com/earendil-works/pi`
+- 命令：`git submodule add --depth=1 https://github.com/earendil-works/pi`（shallow clone，默认目录名=仓库名 `pi`）
+- 结果：pi `.git` 仅 **4.0K**（对比 openclaw 1.6GB），856 个 tracked files，最新 commit `6d5ede3`
