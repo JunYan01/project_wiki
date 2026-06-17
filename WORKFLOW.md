@@ -60,6 +60,29 @@ git commit -am "添加 pi-agent submodule"
 git push
 ```
 
+### 4.4 更新大仓库 / 网络慢时用 shallow fetch（只拉最新，不要历史）
+
+> 像 `openclaw` 这种巨型仓库（4 万+ commits、1.6GB），用 `git submodule update --remote` 会拉取海量历史，在慢/中转链路上极易卡死（长时间无输出、`git index-pack` 进程 CPU 不涨、`.git/objects/pack/` 出现数百 MB 临时 pack）。更新到最新其实**不需要全历史**。
+
+只拉默认分支最新一个 commit（数据量从几百 MB 降到几十 MB）：
+
+```bash
+# 1) 确认该子模块默认分支（.gitmodules 未配 branch 时用 default）
+git config -f .gitmodules submodule.<name>.branch
+git -C <name> symbolic-ref refs/remotes/origin/HEAD | sed 's@refs/remotes/origin/@@'   # 输出如 main
+
+# 2) 浅拉最新（--depth=1）
+git -C <name> fetch --depth=1 origin <默认分支>
+
+# 3) 切到最新
+git -C <name> checkout FETCH_HEAD
+
+# 4) 回 wiki 层提交新指针
+git add <name> && git commit -m "更新 <name> 至最新" && git push
+```
+
+**判断依据**：`update --remote` 卡住超过几分钟且 `git index-pack` 进程 CPU 长期不动 → 八成是大仓库全量历史传输，改用上面的 shallow 流程。
+
 ## 5. Graphify 知识图谱工作流
 
 ### 5.1 安装（仅首次）
