@@ -1,0 +1,1 @@
+{"nodes": [{"id": "bashspawnhook_extension", "label": "Bash Spawn Hook Extension (createBashTool spawnHook)", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/bash-spawn-hook.ts", "source_location": null}], "edges": [], "hyperedges": []}

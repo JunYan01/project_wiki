@@ -1,0 +1,142 @@
+{
+  "nodes": [
+    {"id": "supports_xhigh_test", "label": "supports-xhigh.test.ts (xhigh thinking level matrix)", "file_type": "code", "source_file": "pi/packages/ai/test/supports-xhigh.test.ts", "source_location": null},
+    {"id": "node_http_proxy_test", "label": "node-http-proxy.test.ts (HTTP proxy resolution)", "file_type": "code", "source_file": "pi/packages/ai/test/node-http-proxy.test.ts", "source_location": null},
+    {"id": "openai_completions_tool_result_images_test", "label": "openai-completions-tool-result-images.test.ts (tool-result image batching)", "file_type": "code", "source_file": "pi/packages/ai/test/openai-completions-tool-result-images.test.ts", "source_location": null},
+    {"id": "fireworks_models_test", "label": "fireworks-models.test.ts (Fireworks session affinity & tool compat)", "file_type": "code", "source_file": "pi/packages/ai/test/fireworks-models.test.ts", "source_location": null},
+    {"id": "bedrock_custom_headers_test", "label": "bedrock-custom-headers.test.ts (custom headers middleware)", "file_type": "code", "source_file": "pi/packages/ai/test/bedrock-custom-headers.test.ts", "source_location": null},
+    {"id": "anthropic_opus_4_8_smoke_test", "label": "anthropic-opus-4-8-smoke.test.ts (Opus 4.8 adaptive thinking smoke)", "file_type": "code", "source_file": "pi/packages/ai/test/anthropic-opus-4-8-smoke.test.ts", "source_location": null},
+    {"id": "openai_completions_empty_tools_test", "label": "openai-completions-empty-tools.test.ts (empty tools & Cloudflare AI Gateway)", "file_type": "code", "source_file": "pi/packages/ai/test/openai-completions-empty-tools.test.ts", "source_location": null},
+    {"id": "images_test", "label": "images.test.ts (Images E2E via OpenRouter)", "file_type": "code", "source_file": "pi/packages/ai/test/images.test.ts", "source_location": null},
+    {"id": "anthropic_cache_write_1h_cost_test", "label": "anthropic-cache-write-1h-cost.test.ts (1h cache write pricing)", "file_type": "code", "source_file": "pi/packages/ai/test/anthropic-cache-write-1h-cost.test.ts", "source_location": null},
+    {"id": "bedrock_endpoint_resolution_test", "label": "bedrock-endpoint-resolution.test.ts (Bedrock region/endpoint derivation)", "file_type": "code", "source_file": "pi/packages/ai/test/bedrock-endpoint-resolution.test.ts", "source_location": null},
+    {"id": "openai_completions_tool_choice_test", "label": "openai-completions-tool-choice.test.ts (tool_choice, z.ai GLM-5.2, reasoning replay)", "file_type": "code", "source_file": "pi/packages/ai/test/openai-completions-tool-choice.test.ts", "source_location": null},
+    {"id": "lazy_module_load_test", "label": "lazy-module-load.test.ts (lazy provider SDK loading)", "file_type": "code", "source_file": "pi/packages/ai/test/lazy-module-load.test.ts", "source_location": null},
+    {"id": "faux_provider_test", "label": "faux-provider.test.ts (fake provider for tests)", "file_type": "code", "source_file": "pi/packages/ai/test/faux-provider.test.ts", "source_location": null},
+    {"id": "mistral_reasoning_mode_test", "label": "mistral-reasoning-mode.test.ts (Mistral reasoning_effort vs prompt_mode)", "file_type": "code", "source_file": "pi/packages/ai/test/mistral-reasoning-mode.test.ts", "source_location": null},
+    {"id": "responseid_test", "label": "responseid.test.ts (responseId across providers E2E)", "file_type": "code", "source_file": "pi/packages/ai/test/responseid.test.ts", "source_location": null},
+    {"id": "google_thinking_disable_test", "label": "google-thinking-disable.test.ts (thinking disable E2E)", "file_type": "code", "source_file": "pi/packages/ai/test/google-thinking-disable.test.ts", "source_location": null},
+    {"id": "oauth_device_code_test", "label": "oauth-device-code.test.ts (device-code polling utility)", "file_type": "code", "source_file": "pi/packages/ai/test/oauth-device-code.test.ts", "source_location": null},
+    {"id": "xhigh_test", "label": "xhigh.test.ts (xhigh reasoning error handling)", "file_type": "code", "source_file": "pi/packages/ai/test/xhigh.test.ts", "source_location": null},
+    {"id": "abort_test", "label": "abort.test.ts (AbortController across providers)", "file_type": "code", "source_file": "pi/packages/ai/test/abort.test.ts", "source_location": null},
+    {"id": "tool_call_without_result_test", "label": "tool-call-without-result.test.ts (orphaned tool call filtering)", "file_type": "code", "source_file": "pi/packages/ai/test/tool-call-without-result.test.ts", "source_location": null},
+    {"id": "openai_codex_oauth_test", "label": "openai-codex-oauth.test.ts (OpenAI Codex device code OAuth)", "file_type": "code", "source_file": "pi/packages/ai/test/openai-codex-oauth.test.ts", "source_location": null},
+    {"id": "bedrock_thinking_payload_test", "label": "bedrock-thinking-payload.test.ts (Bedrock adaptive thinking payload)", "file_type": "code", "source_file": "pi/packages/ai/test/bedrock-thinking-payload.test.ts", "source_location": null},
+
+    {"id": "models_src", "label": "models.ts (getModel/getModels/getSupportedThinkingLevels registry)", "file_type": "code", "source_file": "pi/packages/ai/src/models.ts", "source_location": null},
+    {"id": "stream_src", "label": "stream.ts (stream/streamSimple/complete dispatch)", "file_type": "code", "source_file": "pi/packages/ai/src/stream.ts", "source_location": null},
+    {"id": "anthropic_provider_src", "label": "providers/anthropic.ts (streamAnthropic)", "file_type": "code", "source_file": "pi/packages/ai/src/providers/anthropic.ts", "source_location": null},
+    {"id": "bedrock_provider_src", "label": "providers/amazon-bedrock.ts (streamBedrock/streamSimpleBedrock)", "file_type": "code", "source_file": "pi/packages/ai/src/providers/amazon-bedrock.ts", "source_location": null},
+    {"id": "openai_completions_provider_src", "label": "providers/openai-completions.ts (convertMessages)", "file_type": "code", "source_file": "pi/packages/ai/src/providers/openai-completions.ts", "source_location": null},
+    {"id": "node_http_proxy_src", "label": "utils/node-http-proxy.ts (resolveHttpProxyUrlForTarget)", "file_type": "code", "source_file": "pi/packages/ai/src/utils/node-http-proxy.ts", "source_location": null},
+    {"id": "env_api_keys_src", "label": "env-api-keys.ts (findEnvKeys/getEnvApiKey)", "file_type": "code", "source_file": "pi/packages/ai/src/env-api-keys.ts", "source_location": null},
+    {"id": "images_src", "label": "images.ts (generateImages)", "file_type": "code", "source_file": "pi/packages/ai/src/images.ts", "source_location": null},
+    {"id": "image_models_src", "label": "image-models.ts (getImageModel)", "file_type": "code", "source_file": "pi/packages/ai/src/image-models.ts", "source_location": null},
+    {"id": "device_code_src", "label": "utils/oauth/device-code.ts (pollOAuthDeviceCodeFlow)", "file_type": "code", "source_file": "pi/packages/ai/src/utils/oauth/device-code.ts", "source_location": null},
+    {"id": "openai_codex_oauth_src", "label": "utils/oauth/openai-codex.ts (loginOpenAICodexDeviceCode)", "file_type": "code", "source_file": "pi/packages/ai/src/utils/oauth/openai-codex.ts", "source_location": null},
+    {"id": "index_src", "label": "index.ts (barrel + faux provider + registerFauxProvider)", "file_type": "code", "source_file": "pi/packages/ai/src/index.ts", "source_location": null},
+    {"id": "types_src", "label": "types.ts (Context/Model/Tool/StreamOptions types)", "file_type": "code", "source_file": "pi/packages/ai/src/types.ts", "source_location": null},
+    {"id": "oauth_helper_test", "label": "test/oauth.ts (resolveApiKey helper)", "file_type": "code", "source_file": "pi/packages/ai/test/oauth.ts", "source_location": null},
+
+    {"id": "concept_xhigh", "label": "xhigh reasoning effort level", "file_type": "code", "source_file": "pi/packages/ai/test/xhigh.test.ts", "source_location": null},
+    {"id": "concept_session_affinity", "label": "provider session affinity headers", "file_type": "code", "source_file": "pi/packages/ai/test/fireworks-models.test.ts", "source_location": null},
+    {"id": "concept_cache_1h", "label": "1h prompt cache write (2x input pricing)", "file_type": "code", "source_file": "pi/packages/ai/test/anthropic-cache-write-1h-cost.test.ts", "source_location": null},
+    {"id": "concept_adaptive_thinking", "label": "adaptive thinking mode (Opus 4.8/Fable 5)", "file_type": "code", "source_file": "pi/packages/ai/test/bedrock-thinking-payload.test.ts", "source_location": null},
+    {"id": "concept_orphan_tool_call", "label": "orphaned tool call filtering", "file_type": "code", "source_file": "pi/packages/ai/test/tool-call-without-result.test.ts", "source_location": null},
+    {"id": "concept_lazy_module", "label": "lazy provider SDK module loading", "file_type": "code", "source_file": "pi/packages/ai/test/lazy-module-load.test.ts", "source_location": null},
+    {"id": "concept_device_code_flow", "label": "OAuth device code flow (polling)", "file_type": "code", "source_file": "pi/packages/ai/test/oauth-device-code.test.ts", "source_location": null}
+  ],
+  "edges": [
+    {"source": "supports_xhigh_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/supports-xhigh.test.ts", "weight": 1.0},
+    {"source": "supports_xhigh_test", "target": "concept_xhigh", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/supports-xhigh.test.ts", "weight": 1.0},
+
+    {"source": "node_http_proxy_test", "target": "node_http_proxy_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/node-http-proxy.test.ts", "weight": 1.0},
+
+    {"source": "openai_completions_tool_result_images_test", "target": "openai_completions_provider_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-completions-tool-result-images.test.ts", "weight": 1.0},
+    {"source": "openai_completions_tool_result_images_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-completions-tool-result-images.test.ts", "weight": 1.0},
+
+    {"source": "fireworks_models_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/fireworks-models.test.ts", "weight": 1.0},
+    {"source": "fireworks_models_test", "target": "anthropic_provider_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/fireworks-models.test.ts", "weight": 1.0},
+    {"source": "fireworks_models_test", "target": "env_api_keys_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/fireworks-models.test.ts", "weight": 1.0},
+    {"source": "fireworks_models_test", "target": "concept_session_affinity", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/fireworks-models.test.ts", "weight": 1.0},
+
+    {"source": "bedrock_custom_headers_test", "target": "bedrock_provider_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/bedrock-custom-headers.test.ts", "weight": 1.0},
+    {"source": "bedrock_custom_headers_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/bedrock-custom-headers.test.ts", "weight": 1.0},
+
+    {"source": "anthropic_opus_4_8_smoke_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/anthropic-opus-4-8-smoke.test.ts", "weight": 1.0},
+    {"source": "anthropic_opus_4_8_smoke_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/anthropic-opus-4-8-smoke.test.ts", "weight": 1.0},
+    {"source": "anthropic_opus_4_8_smoke_test", "target": "concept_adaptive_thinking", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/anthropic-opus-4-8-smoke.test.ts", "weight": 1.0},
+
+    {"source": "openai_completions_empty_tools_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-completions-empty-tools.test.ts", "weight": 1.0},
+    {"source": "openai_completions_empty_tools_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-completions-empty-tools.test.ts", "weight": 1.0},
+    {"source": "openai_completions_empty_tools_test", "target": "concept_session_affinity", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/ai/test/openai-completions-empty-tools.test.ts", "weight": 1.0},
+
+    {"source": "images_test", "target": "images_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/images.test.ts", "weight": 1.0},
+    {"source": "images_test", "target": "image_models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/images.test.ts", "weight": 1.0},
+
+    {"source": "anthropic_cache_write_1h_cost_test", "target": "anthropic_provider_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/anthropic-cache-write-1h-cost.test.ts", "weight": 1.0},
+    {"source": "anthropic_cache_write_1h_cost_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/anthropic-cache-write-1h-cost.test.ts", "weight": 1.0},
+    {"source": "anthropic_cache_write_1h_cost_test", "target": "concept_cache_1h", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/anthropic-cache-write-1h-cost.test.ts", "weight": 1.0},
+
+    {"source": "bedrock_endpoint_resolution_test", "target": "bedrock_provider_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/bedrock-endpoint-resolution.test.ts", "weight": 1.0},
+    {"source": "bedrock_endpoint_resolution_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/bedrock-endpoint-resolution.test.ts", "weight": 1.0},
+
+    {"source": "openai_completions_tool_choice_test", "target": "openai_completions_provider_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-completions-tool-choice.test.ts", "weight": 1.0},
+    {"source": "openai_completions_tool_choice_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-completions-tool-choice.test.ts", "weight": 1.0},
+    {"source": "openai_completions_tool_choice_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-completions-tool-choice.test.ts", "weight": 1.0},
+    {"source": "openai_completions_tool_choice_test", "target": "concept_session_affinity", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "pi/packages/ai/test/openai-completions-tool-choice.test.ts", "weight": 1.0},
+
+    {"source": "lazy_module_load_test", "target": "index_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/lazy-module-load.test.ts", "weight": 1.0},
+    {"source": "lazy_module_load_test", "target": "concept_lazy_module", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/lazy-module-load.test.ts", "weight": 1.0},
+
+    {"source": "faux_provider_test", "target": "index_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/faux-provider.test.ts", "weight": 1.0},
+    {"source": "faux_provider_test", "target": "stream_src", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/ai/test/faux-provider.test.ts", "weight": 1.0},
+
+    {"source": "mistral_reasoning_mode_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/mistral-reasoning-mode.test.ts", "weight": 1.0},
+    {"source": "mistral_reasoning_mode_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/mistral-reasoning-mode.test.ts", "weight": 1.0},
+
+    {"source": "responseid_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/responseid.test.ts", "weight": 1.0},
+    {"source": "responseid_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/responseid.test.ts", "weight": 1.0},
+    {"source": "responseid_test", "target": "oauth_helper_test", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/responseid.test.ts", "weight": 1.0},
+
+    {"source": "google_thinking_disable_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/google-thinking-disable.test.ts", "weight": 1.0},
+    {"source": "google_thinking_disable_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/google-thinking-disable.test.ts", "weight": 1.0},
+
+    {"source": "oauth_device_code_test", "target": "device_code_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/oauth-device-code.test.ts", "weight": 1.0},
+    {"source": "oauth_device_code_test", "target": "concept_device_code_flow", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/oauth-device-code.test.ts", "weight": 1.0},
+
+    {"source": "xhigh_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/xhigh.test.ts", "weight": 1.0},
+    {"source": "xhigh_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/xhigh.test.ts", "weight": 1.0},
+    {"source": "xhigh_test", "target": "concept_xhigh", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/xhigh.test.ts", "weight": 1.0},
+
+    {"source": "abort_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/abort.test.ts", "weight": 1.0},
+    {"source": "abort_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/abort.test.ts", "weight": 1.0},
+    {"source": "abort_test", "target": "oauth_helper_test", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/abort.test.ts", "weight": 1.0},
+
+    {"source": "tool_call_without_result_test", "target": "stream_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/tool-call-without-result.test.ts", "weight": 1.0},
+    {"source": "tool_call_without_result_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/tool-call-without-result.test.ts", "weight": 1.0},
+    {"source": "tool_call_without_result_test", "target": "concept_orphan_tool_call", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/tool-call-without-result.test.ts", "weight": 1.0},
+    {"source": "tool_call_without_result_test", "target": "oauth_helper_test", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/tool-call-without-result.test.ts", "weight": 1.0},
+
+    {"source": "openai_codex_oauth_test", "target": "openai_codex_oauth_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-codex-oauth.test.ts", "weight": 1.0},
+    {"source": "openai_codex_oauth_test", "target": "concept_device_code_flow", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-codex-oauth.test.ts", "weight": 1.0},
+
+    {"source": "bedrock_thinking_payload_test", "target": "bedrock_provider_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/bedrock-thinking-payload.test.ts", "weight": 1.0},
+    {"source": "bedrock_thinking_payload_test", "target": "models_src", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/bedrock-thinking-payload.test.ts", "weight": 1.0},
+    {"source": "bedrock_thinking_payload_test", "target": "concept_adaptive_thinking", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/bedrock-thinking-payload.test.ts", "weight": 1.0},
+
+    {"source": "types_src", "target": "stream_src", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/ai/test/types.ts", "weight": 1.0},
+
+    {"source": "supports_xhigh_test", "target": "xhigh_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/ai/test/supports-xhigh.test.ts", "weight": 1.0},
+    {"source": "anthropic_opus_4_8_smoke_test", "target": "bedrock_thinking_payload_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/ai/test/anthropic-opus-4-8-smoke.test.ts", "weight": 1.0},
+    {"source": "oauth_device_code_test", "target": "openai_codex_oauth_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/ai/test/oauth-device-code.test.ts", "weight": 1.0},
+    {"source": "bedrock_endpoint_resolution_test", "target": "bedrock_custom_headers_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/ai/test/bedrock-endpoint-resolution.test.ts", "weight": 1.0},
+    {"source": "abort_test", "target": "tool_call_without_result_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "pi/packages/ai/test/abort.test.ts", "weight": 1.0},
+    {"source": "responseid_test", "target": "google_thinking_disable_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.65, "source_file": "pi/packages/ai/test/responseid.test.ts", "weight": 1.0}
+  ],
+  "hyperedges": [
+    {"id": "he_bedrock_test_cluster", "nodes": ["bedrock_custom_headers_test", "bedrock_endpoint_resolution_test", "bedrock_thinking_payload_test", "bedrock_provider_src"], "relation": "collaborates_on", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/ai/test/bedrock-thinking-payload.test.ts"},
+    {"id": "he_oauth_device_code_cluster", "nodes": ["oauth_device_code_test", "openai_codex_oauth_test", "device_code_src", "openai_codex_oauth_src"], "relation": "collaborates_on", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-codex-oauth.test.ts"},
+    {"id": "he_e2e_provider_matrix", "nodes": ["abort_test", "responseid_test", "tool_call_without_result_test", "stream_src"], "relation": "shares_pattern", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/ai/test/abort.test.ts"}
+  ]
+}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "provider-payload_extension", "label": "Provider Payload Logger Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/provider-payload.ts", "source_location": "export default"}], "edges": [], "hyperedges": []}

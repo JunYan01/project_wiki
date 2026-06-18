@@ -108,6 +108,24 @@ uv run graphify install                 # 把 graphify skill 注册到 Claude Co
 git commit -am "重新生成 <repo> 知识图谱产物"
 ```
 
+### 5.4 输出目录命名（graphify-out-<repo>）与查询指定
+
+> **graphify 原生输出固定为 `graphify-out/`**——skill 里是硬编码字面量，CLI/skill 都**没有** `--out-dir` 参数（`--obsidian-dir` 只改 vault 子目录）。要按仓库分开存放（`graphify-out-pi` / `graphify-out-openclaw` 等），只能**跑完后手动 `mv`**。这也正是 `graphify-out-openclaw/` 的由来，以及 hermes-agent 的为什么还叫 `graphify-out/`（第一个，没移走）。
+
+多仓库并存的标准流程（⚠️ 不先移走会覆盖上一个仓库的图谱）：
+```bash
+cd /Users/godccw/Developer/projects/project_wiki
+mv graphify-out graphify-out-<上一个repo>     # 1) 先把当前图谱移走保护
+# 2) 跑新仓库（在 Claude Code 里触发 skill）：  /graphify <newrepo> --mode deep
+mv graphify-out graphify-out-<newrepo>          # 3) 重命名新结果
+```
+
+**查询时指定某个仓库的图谱（支持，用 `--graph` 指向具体 graph.json，不是目录名）：**
+```bash
+.venv/bin/graphify query "你的问题" --graph graphify-out-pi/graph.json
+# 默认（不带 --graph）读 graphify-out/graph.json
+```
+
 ## 6. 命令速查
 
 | 目的 | 命令 |

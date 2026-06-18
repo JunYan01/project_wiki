@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    {"id":"footer-data-provider_FooterDataProvider","label":"FooterDataProvider","file_type":"code","source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","source_location":"class FooterDataProvider:99"},
+    {"id":"footer-data-provider_ReadonlyFooterDataProvider","label":"ReadonlyFooterDataProvider","file_type":"code","source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","source_location":"type ReadonlyFooterDataProvider:385"},
+    {"id":"footer-data-provider_GitPaths","label":"GitPaths / findGitPaths","file_type":"code","source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","source_location":"function findGitPaths:16"},
+    {"id":"footer-data-provider_ReftableWatcher","label":"Reftable HEAD watcher","file_type":"code","source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","source_location":"setupGitWatcher reftable:344"},
+
+    {"id":"event-bus_EventBus","label":"EventBus / createEventBus","file_type":"code","source_file":"pi/packages/coding-agent/src/core/event-bus.ts","source_location":"function createEventBus:12"},
+
+    {"id":"sdk_createAgentSession","label":"createAgentSession (SDK entry)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/sdk.ts","source_location":"function createAgentSession:166"},
+    {"id":"sdk_ConvertToLlmBlockImages","label":"convertToLlm blockImages wrapper","file_type":"code","source_file":"pi/packages/coding-agent/src/core/sdk.ts","source_location":"convertToLlmWithBlockImages:255"},
+    {"id":"sdk_StreamFn","label":"Agent streamFn (provider request)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/sdk.ts","source_location":"Agent streamFn:301"},
+
+    {"id":"experimental_areExperimentalFeaturesEnabled","label":"areExperimentalFeaturesEnabled (PI_EXPERIMENTAL)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/experimental.ts","source_location":"function areExperimentalFeaturesEnabled:1"},
+
+    {"id":"agent-session_AgentSession","label":"AgentSession (core lifecycle abstraction)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":"class AgentSession:256"},
+    {"id":"agent-session_Compaction","label":"AgentSession compaction/auto-compaction","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":"compact/_checkCompaction:1643"},
+    {"id":"agent-session_AutoRetry","label":"AgentSession auto-retry with backoff","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":"_prepareRetry:2498"},
+    {"id":"agent-session_TreeNavigation","label":"AgentSession tree navigation / branch summary","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":"navigateTree:2708"},
+    {"id":"agent-session_BashExecution","label":"AgentSession bash execution","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":"executeBash:2586"},
+    {"id":"agent-session_ToolHooks","label":"Agent beforeToolCall/afterToolCall hooks","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":"_installAgentToolHooks:405"},
+    {"id":"agent-session_ParseSkillBlock","label":"parseSkillBlock","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":"function parseSkillBlock:112"},
+
+    {"id":"package-manager_DefaultPackageManager","label":"DefaultPackageManager","file_type":"code","source_file":"pi/packages/coding-agent/src/core/package-manager.ts","source_location":"class DefaultPackageManager:775"},
+    {"id":"package-manager_ResourceResolution","label":"Resource resolution (extensions/skills/prompts/themes)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/package-manager.ts","source_location":"resolve:881"},
+    {"id":"package-manager_NpmGitInstall","label":"npm/git install, update, dedupe","file_type":"code","source_file":"pi/packages/coding-agent/src/core/package-manager.ts","source_location":"installNpm/installGit:1760"},
+    {"id":"package-manager_PackageFiltering","label":"Package filtering / precedence ranking","file_type":"code","source_file":"pi/packages/coding-agent/src/core/package-manager.ts","source_location":"resourcePrecedenceRank:184"},
+    {"id":"package-manager_PackageManagerInterface","label":"PackageManager interface","file_type":"code","source_file":"pi/packages/coding-agent/src/core/package-manager.ts","source_location":"interface PackageManager:101"},
+
+    {"id":"model-registry_ModelRegistry","label":"ModelRegistry","file_type":"code","source_file":"pi/packages/coding-agent/src/core/model-registry.ts","source_location":"class ModelRegistry:334"},
+    {"id":"model-registry_CustomModels","label":"Custom models.json loading/validation","file_type":"code","source_file":"pi/packages/coding-agent/src/core/model-registry.ts","source_location":"loadCustomModels:458"},
+    {"id":"model-registry_ApiKeyResolution","label":"getApiKeyAndHeaders / OAuth resolution","file_type":"code","source_file":"pi/packages/coding-agent/src/core/model-registry.ts","source_location":"getApiKeyAndHeaders:685"},
+    {"id":"model-registry_DynamicProviderRegistration","label":"Dynamic provider registration (extensions)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/model-registry.ts","source_location":"registerProvider:812"},
+    {"id":"model-registry_OpenRouterRouting","label":"OpenRouter/Vercel routing + compat schemas","file_type":"code","source_file":"pi/packages/coding-agent/src/core/model-registry.ts","source_location":"OpenRouterRoutingSchema:50"},
+
+    {"id":"auth-guidance_Messages","label":"Auth guidance message formatters","file_type":"code","source_file":"pi/packages/coding-agent/src/core/auth-guidance.ts","source_location":"formatNoModelsAvailableMessage:14"},
+
+    {"id":"compaction_compact","label":"compact() / prepareCompaction","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","source_location":"function compact:749"},
+    {"id":"compaction_CutPoint","label":"findCutPoint / cut point detection","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","source_location":"function findCutPoint:386"},
+    {"id":"compaction_GenerateSummary","label":"generateSummary (LLM checkpoint)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","source_location":"function generateSummary:559"},
+    {"id":"compaction_TokenEstimation","label":"estimateTokens / estimateContextTokens","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","source_location":"estimateTokens:250"},
+
+    {"id":"compaction-utils_SerializeConversation","label":"serializeConversation","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/utils.ts","source_location":"function serializeConversation:109"},
+    {"id":"compaction-utils_FileOps","label":"FileOperations tracking (read/written/edited)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/utils.ts","source_location":"extractFileOpsFromMessage:29"},
+    {"id":"compaction-utils_SummarizationPrompt","label":"SUMMARIZATION_SYSTEM_PROMPT","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/utils.ts","source_location":"SUMMARIZATION_SYSTEM_PROMPT:168"},
+
+    {"id":"branch-summarization_GenerateBranchSummary","label":"generateBranchSummary","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/branch-summarization.ts","source_location":"function generateBranchSummary:287"},
+    {"id":"branch-summarization_CollectEntries","label":"collectEntriesForBranchSummary","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/branch-summarization.ts","source_location":"function collectEntriesForBranchSummary:102"},
+
+    {"id":"compaction-index","label":"compaction barrel index","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/index.ts","source_location":"export *:1"},
+
+    {"id":"tool-renderer_ToolHtmlRenderer","label":"createToolHtmlRenderer","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/tool-renderer.ts","source_location":"function createToolHtmlRenderer:58"},
+    {"id":"ansi-to_html_AnsiToHtml","label":"ansiToHtml / ansiLinesToHtml","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/ansi-to-html.ts","source_location":"function ansiToHtml:198"},
+    {"id":"export-html_index_ExportSessionToHtml","label":"exportSessionToHtml / exportFromFile","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","source_location":"function exportSessionToHtml:236"},
+    {"id":"export-html_index_PreRenderCustomTools","label":"preRenderCustomTools","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","source_location":"function preRenderCustomTools:183"},
+    {"id":"export-html_index_ThemeColorDerivation","label":"Theme color derivation for export","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","source_location":"deriveExportColors:81"},
+    {"id":"template_js_SessionRenderer","label":"HTML export template.js (client renderer)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/template.js","source_location":"IIFE:1"},
+    {"id":"vendor_marked","label":"marked v18.0.5 (markdown parser, vendored)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/vendor/marked.min.js","source_location":"vendor:1"},
+    {"id":"vendor_highlightjs","label":"highlight.js v11.9.0 (syntax highlighter, vendored)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/export-html/vendor/highlight.min.js","source_location":"vendor:1"},
+
+    {"id":"extensions_loader_Loader","label":"Extension loader (jiti)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","source_location":"loadExtensions:413"},
+    {"id":"extensions_loader_ExtensionAPI","label":"createExtensionAPI","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","source_location":"function createExtensionAPI:177"},
+    {"id":"extensions_loader_Discovery","label":"discoverAndLoadExtensions","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","source_location":"function discoverAndLoadExtensions:557"},
+    {"id":"extensions_loader_VirtualModules","label":"VIRTUAL_MODULES / Bun bundling","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","source_location":"VIRTUAL_MODULES:44"},
+
+    {"id":"extensions_types_Types","label":"Extension system types (events/tools/context)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/types.ts","source_location":"module:1"},
+    {"id":"extensions_types_ToolDefinition","label":"ToolDefinition","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/types.ts","source_location":"interface ToolDefinition:435"},
+    {"id":"extensions_types_ExtensionAPI","label":"ExtensionAPI","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/types.ts","source_location":"interface ExtensionAPI:1120"},
+    {"id":"extensions_types_EventTaxonomy","label":"Extension event taxonomy (session/agent/tool)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/types.ts","source_location":"ExtensionEvent:985"},
+
+    {"id":"extensions_index","label":"extensions barrel index","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/index.ts","source_location":"export:1"},
+    {"id":"extensions_wrapper_WrapRegisteredTools","label":"wrapRegisteredTool(s)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/extensions/wrapper.ts","source_location":"function wrapRegisteredTools:25"}
+  ],
+  "edges": [
+    {"source":"sdk_createAgentSession","target":"agent-session_AgentSession","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/sdk.ts","weight":1.0},
+    {"source":"sdk_createAgentSession","target":"model-registry_ModelRegistry","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/sdk.ts","weight":1.0},
+    {"source":"sdk_createAgentSession","target":"model-registry_ModelRegistry","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/sdk.ts","weight":1.0},
+    {"source":"sdk_createAgentSession","target":"auth-guidance_Messages","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/sdk.ts","weight":1.0},
+    {"source":"sdk_StreamFn","target":"model-registry_ApiKeyResolution","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/sdk.ts","weight":1.0},
+    {"source":"sdk_ConvertToLlmBlockImages","target":"sdk_StreamFn","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.75,"source_file":"pi/packages/coding-agent/src/core/sdk.ts","weight":0.8},
+
+    {"source":"agent-session_AgentSession","target":"agent-session_Compaction","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_Compaction","target":"compaction_compact","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_Compaction","target":"compaction_TokenEstimation","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_TreeNavigation","target":"branch-summarization_GenerateBranchSummary","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_TreeNavigation","target":"branch-summarization_CollectEntries","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"agent-session_ToolHooks","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"agent-session_BashExecution","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"agent-session_AutoRetry","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"model-registry_ApiKeyResolution","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"auth-guidance_Messages","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"export-html_index_ExportSessionToHtml","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"tool-renderer_ToolHtmlRenderer","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"extensions_wrapper_WrapRegisteredTools","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":1.0},
+    {"source":"agent-session_AutoRetry","target":"agent-session_Compaction","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":0.8},
+
+    {"source":"compaction_compact","target":"compaction_CutPoint","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","weight":1.0},
+    {"source":"compaction_compact","target":"compaction_GenerateSummary","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","weight":1.0},
+    {"source":"compaction_GenerateSummary","target":"compaction-utils_SerializeConversation","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","weight":1.0},
+    {"source":"compaction_GenerateSummary","target":"compaction-utils_FileOps","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","weight":1.0},
+    {"source":"compaction_compact","target":"compaction-utils_SummarizationPrompt","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/compaction.ts","weight":1.0},
+    {"source":"branch-summarization_GenerateBranchSummary","target":"compaction-utils_SerializeConversation","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/branch-summarization.ts","weight":1.0},
+    {"source":"branch-summarization_GenerateBranchSummary","target":"compaction_TokenEstimation","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/branch-summarization.ts","weight":1.0},
+    {"source":"compaction-index","target":"compaction_compact","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/index.ts","weight":1.0},
+    {"source":"compaction-index","target":"branch-summarization_GenerateBranchSummary","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/compaction/index.ts","weight":1.0},
+    {"source":"branch-summarization_GenerateBranchSummary","target":"compaction_GenerateSummary","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.82,"source_file":"pi/packages/coding-agent/src/core/compaction/branch-summarization.ts","weight":0.8},
+
+    {"source":"footer-data-provider_FooterDataProvider","target":"footer-data-provider_GitPaths","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","weight":1.0},
+    {"source":"footer-data-provider_FooterDataProvider","target":"footer-data-provider_ReftableWatcher","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","weight":1.0},
+    {"source":"footer-data-provider_ReadonlyFooterDataProvider","target":"footer-data-provider_FooterDataProvider","relation":"implements","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","weight":1.0},
+
+    {"source":"model-registry_ModelRegistry","target":"model-registry_CustomModels","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/model-registry.ts","weight":1.0},
+    {"source":"model-registry_ModelRegistry","target":"model-registry_ApiKeyResolution","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/model-registry.ts","weight":1.0},
+    {"source":"model-registry_ModelRegistry","target":"model-registry_DynamicProviderRegistration","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/model-registry.ts","weight":1.0},
+    {"source":"model-registry_CustomModels","target":"model-registry_OpenRouterRouting","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/model-registry.ts","weight":1.0},
+
+    {"source":"package-manager_DefaultPackageManager","target":"package-manager_PackageManagerInterface","relation":"implements","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/package-manager.ts","weight":1.0},
+    {"source":"package-manager_DefaultPackageManager","target":"package-manager_ResourceResolution","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/package-manager.ts","weight":1.0},
+    {"source":"package-manager_DefaultPackageManager","target":"package-manager_NpmGitInstall","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/package-manager.ts","weight":1.0},
+    {"source":"package-manager_ResourceResolution","target":"package-manager_PackageFiltering","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/package-manager.ts","weight":1.0},
+
+    {"source":"export-html_index_ExportSessionToHtml","target":"export-html_index_PreRenderCustomTools","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","weight":1.0},
+    {"source":"export-html_index_ExportSessionToHtml","target":"export-html_index_ThemeColorDerivation","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","weight":1.0},
+    {"source":"export-html_index_PreRenderCustomTools","target":"tool-renderer_ToolHtmlRenderer","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","weight":1.0},
+    {"source":"tool-renderer_ToolHtmlRenderer","target":"ansi-to_html_AnsiToHtml","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/tool-renderer.ts","weight":1.0},
+    {"source":"export-html_index_ExportSessionToHtml","target":"template_js_SessionRenderer","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","weight":1.0},
+    {"source":"export-html_index_ExportSessionToHtml","target":"vendor_marked","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","weight":1.0},
+    {"source":"export-html_index_ExportSessionToHtml","target":"vendor_highlightjs","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/index.ts","weight":1.0},
+    {"source":"template_js_SessionRenderer","target":"vendor_marked","relation":"calls","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/src/core/export-html/template.js","weight":0.9},
+    {"source":"template_js_SessionRenderer","target":"vendor_highlightjs","relation":"calls","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/src/core/export-html/template.js","weight":0.9},
+
+    {"source":"extensions_loader_Loader","target":"extensions_loader_ExtensionAPI","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","weight":1.0},
+    {"source":"extensions_loader_Loader","target":"extensions_loader_Discovery","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","weight":1.0},
+    {"source":"extensions_loader_Loader","target":"extensions_loader_VirtualModules","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","weight":1.0},
+    {"source":"extensions_loader_Loader","target":"event-bus_EventBus","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","weight":1.0},
+    {"source":"extensions_loader_ExtensionAPI","target":"extensions_types_ExtensionAPI","relation":"implements","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/loader.ts","weight":1.0},
+    {"source":"extensions_index","target":"extensions_loader_Loader","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/index.ts","weight":1.0},
+    {"source":"extensions_index","target":"extensions_types_Types","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/index.ts","weight":1.0},
+    {"source":"extensions_index","target":"extensions_wrapper_WrapRegisteredTools","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/index.ts","weight":1.0},
+    {"source":"extensions_wrapper_WrapRegisteredTools","target":"extensions_types_ToolDefinition","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/wrapper.ts","weight":1.0},
+
+    {"source":"experimental_areExperimentalFeaturesEnabled","target":"model-registry_DynamicProviderRegistration","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.6,"source_file":"pi/packages/coding-agent/src/core/experimental.ts","weight":0.6},
+    {"source":"auth-guidance_Messages","target":"model-registry_ApiKeyResolution","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.78,"source_file":"pi/packages/coding-agent/src/core/auth-guidance.ts","weight":0.7},
+    {"source":"extensions_types_ToolDefinition","target":"tool-renderer_ToolHtmlRenderer","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/export-html/tool-renderer.ts","weight":1.0},
+    {"source":"agent-session_AgentSession","target":"extensions_types_EventTaxonomy","relation":"implements","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/src/core/agent-session.ts","weight":0.9},
+    {"source":"footer-data-provider_ReadonlyFooterDataProvider","target":"extensions_types_Types","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/core/extensions/types.ts","weight":1.0}
+  ],
+  "hyperedges": [
+    {"id":"he_sdk_assembly","nodes":["sdk_createAgentSession","model-registry_ModelRegistry","agent-session_AgentSession","extensions_loader_Loader"],"relation":"assembles AgentSession from registries and extensions"},
+    {"id":"he_compaction_pipeline","nodes":["agent-session_Compaction","compaction_compact","compaction_CutPoint","compaction_GenerateSummary","compaction-utils_SerializeConversation"],"relation":"context compaction pipeline: prepare, cut, summarize"},
+    {"id":"he_html_export_pipeline","nodes":["export-html_index_ExportSessionToHtml","export-html_index_PreRenderCustomTools","tool-renderer_ToolHtmlRenderer","ansi-to_html_AnsiToHtml","template_js_SessionRenderer","vendor_marked","vendor_highlightjs"],"relation":"HTML export pipeline: pre-render tools, ANSI convert, inject vendored libs into template"}
+  ]
+}

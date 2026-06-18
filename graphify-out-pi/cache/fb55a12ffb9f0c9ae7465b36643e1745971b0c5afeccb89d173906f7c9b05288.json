@@ -1,0 +1,1 @@
+{"nodes": [{"id": "wadfinder_findWadFile", "label": "DOOM WAD File Finder", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/doom-overlay/wad-finder.ts", "source_location": null}], "edges": [], "hyperedges": []}

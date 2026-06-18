@@ -150,3 +150,43 @@ uv run graphify install
 - 新增 submodule：`https://github.com/earendil-works/pi`
 - 命令：`git submodule add --depth=1 https://github.com/earendil-works/pi`（shallow clone，默认目录名=仓库名 `pi`）
 - 结果：pi `.git` 仅 **4.0K**（对比 openclaw 1.6GB），856 个 tracked files，最新 commit `6d5ede3`
+
+---
+
+## Graphify pi 知识图谱 (2026-06-18)
+
+### 1. AST 提取（Part A）
+- pi 674 个 code 文件 → **5071 nodes / 10744 edges**
+- 产物：`graphify-out/.graphify_ast.json`（4.2MB）
+
+### 2. 语义提取（Part B）—— Workflow 两两并发
+- 35 chunks / 756 文件（每 chunk 8-22 文件），chunk 列表在 `graphify-out/.graphify_chunks.json`
+- **方案**：Workflow 工具 + BATCH=2（两两并发），后台跑；每 chunk 一个 agent 读 pi 文件提取，写 `.chunk_result_N.json`，只回传小状态（保护主上下文）
+- **踩坑①（限流）**：cap ~14 全并发 → 瞬间 429「5 小时使用上限」。降到 BATCH=2 解决。5 小时一轮，限流后等重置点（如本日 13:06）。
+- **踩坑②（Load agent 卡死）**：Workflow 的 Load 阶段让 agent 读 chunks.json，却做 20+ 次工具调用（StructuredOutput 反复重试），30 分钟无产出。
+  - **修复**：用 python 把 35 chunks 内嵌成 JS 常量写进 workflow 脚本（`/tmp/pisem.js`），**彻底跳过 Load agent**，Extract 立即开始。python 直接写文件，chunks 不经过主 agent 上下文。
+- **断点续**：`Workflow({scriptPath, resumeFromRunId})`，已完成 chunk 自动缓存跳过。本次 35/35 一次跑完。
+- 结果：**1527 nodes / 1800 edges / 105 hyperedges**
+
+### 3. 合并 + 构图（Part B3 + C + Step 4-6）
+- 整体委托 general-purpose subagent（读 skill.md 代码块照搬，大 JSON 全在子进程；主 agent 只收统计数字）
+- Part B3：35 chunk 聚合去重 → `.graphify_semantic.json`（1526 nodes / 1905 edges / 70 hyperedges）
+- Part C：AST 5071 + 语义 1526 → `.graphify_extract.json`（6484 nodes / 12649 edges）
+- Step 4-6：`build_from_json` + Leiden 无向聚类 → `graph.json` **6366 nodes / 9331 edges / 626 社区**
+- 产物：`graph.json`(5.4MB) / `graph.html`(4.7MB) / `GRAPH_REPORT.md`(144KB)，中间文件全保留（未执行 Step9 清理）
+- **踩坑③**：节点数 6366 超 graphify `MAX_NODES_FOR_VIZ=5000`，HTML 默认跳过 → 提升到 20000 后生成。
+- **踩坑④**：`save_semantic_cache` 对一个目录路径 source_file 报 `IsADirectoryError`，try/except 跳过（首次运行无缓存可合并，安全）。
+
+### 4. 重命名 + 验证
+- `mv graphify-out graphify-out-pi`
+- 验证：`uv run graphify query "project trust coding agent" --graph graphify-out-pi/graph.json` ✓（返回 project-trust 节点/边）
+- 注意：`graphify query` 是关键词 BFS，裸词如 "pi" 不在节点标签里会返回 no match，要用真实存在的词（函数名/路径片段）
+
+### 5. 环境重建教训（跨机器 .venv 失效）
+- 从旧机器复制的 `.venv` 失效：`libpython3.12.dylib not found`、graphify shebang 硬编码旧路径 `/Users/openclaw1/...`
+- 修复：`uv venv --python 3.12` + `uv init --bare` + `uv add --editable "./graphify[all]"`
+- 教训：`.venv` 不可跨机器复制，新机器一律重建
+
+### 6. 可复用资产
+- chunk 聚合参考脚本：`graphify-out-hermes-agent/merge_chunk.py`
+- 大规模语义提取 workflow 生成法：python 读 chunks.json → 内嵌 JS 常量 → 写 .js → `Workflow({scriptPath})`，BATCH=2 避免限流

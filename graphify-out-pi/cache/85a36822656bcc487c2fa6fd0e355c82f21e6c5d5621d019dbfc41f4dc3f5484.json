@@ -1,0 +1,1 @@
+{"nodes": [{"id": "autocommit_extension", "label": "Auto-Commit on Exit Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/auto-commit-on-exit.ts", "source_location": null}], "edges": [], "hyperedges": []}

@@ -1,0 +1,15 @@
+[project]
+name = "project-wiki"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "graphifyy[all]",
+]
+
+[tool.uv.workspace]
+members = [
+    "graphify",
+]
+
+[tool.uv.sources]
+graphifyy = { workspace = true, editable = true }

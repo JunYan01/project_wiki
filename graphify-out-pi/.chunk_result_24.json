@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {"id": "agent-session-compaction_compaction_e2e", "label": "AgentSession Compaction E2E Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/agent-session-compaction.test.ts", "source_location": null},
+    {"id": "tree-selector_TreeSelectorComponent", "label": "TreeSelectorComponent Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/tree-selector.test.ts", "source_location": null},
+    {"id": "rpc-client-process-exit_RpcClient", "label": "RpcClient Process Exit Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/rpc-client-process-exit.test.ts", "source_location": null},
+    {"id": "interactive-mode-compaction_handleEvent", "label": "InteractiveMode Compaction Events Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/interactive-mode-compaction.test.ts", "source_location": null},
+    {"id": "interactive-mode-status_showStatus", "label": "InteractiveMode Status & Autocomplete Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/interactive-mode-status.test.ts", "source_location": null},
+    {"id": "agent-session-dynamic-tools_dynamic_tools", "label": "AgentSession Dynamic Tool Registration Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/agent-session-dynamic-tools.test.ts", "source_location": null},
+    {"id": "skills_loadSkills", "label": "Skills Loading & Formatting Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/skills.test.ts", "source_location": null},
+    {"id": "compaction-summary-reasoning_generateSummary", "label": "Compaction Summary Reasoning Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/compaction-summary-reasoning.test.ts", "source_location": null},
+    {"id": "print-mode_runPrintMode", "label": "runPrintMode Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/print-mode.test.ts", "source_location": null},
+    {"id": "interactive-mode-anthropic-warning_subscription_auth", "label": "Anthropic Subscription Auth Warning Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/interactive-mode-anthropic-warning.test.ts", "source_location": null},
+    {"id": "model-resolver_parseModelPattern", "label": "Model Resolver Pattern Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/model-resolver.test.ts", "source_location": null},
+    {"id": "bash-execution-width_BashExecutionComponent", "label": "BashExecutionComponent Width Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/bash-execution-width.test.ts", "source_location": null},
+    {"id": "footer-width_FooterComponent", "label": "FooterComponent Width Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/footer-width.test.ts", "source_location": null},
+    {"id": "interactive-mode-import-command_handleImport", "label": "InteractiveMode Import Command Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/interactive-mode-import-command.test.ts", "source_location": null},
+    {"id": "compaction-extensions_before_compact", "label": "Compaction Extension Events Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/compaction-extensions.test.ts", "source_location": null},
+    {"id": "rpc-example_main", "label": "RPC Interactive Example", "file_type": "code", "source_file": "pi/packages/coding-agent/test/rpc-example.ts", "source_location": null},
+    {"id": "clipboard-image-bmp_bmp_conversion", "label": "Clipboard BMP to PNG Conversion Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/clipboard-image-bmp-conversion.test.ts", "source_location": null},
+    {"id": "export-html-whitespace_tool_output", "label": "Export HTML Whitespace Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/export-html-whitespace.test.ts", "source_location": null},
+    {"id": "settings-manager_SettingsManager", "label": "SettingsManager Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/settings-manager.test.ts", "source_location": null},
+    {"id": "pi-user-agent_getPiUserAgent", "label": "getPiUserAgent Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/pi-user-agent.test.ts", "source_location": null},
+    {"id": "session-id-readonly_cli", "label": "Session ID Read-Only CLI Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/session-id-readonly.test.ts", "source_location": null},
+    {"id": "sdk-skills_createAgentSession", "label": "createAgentSession Skills Option Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/sdk-skills.test.ts", "source_location": null},
+
+    {"id": "core_AgentSession", "label": "AgentSession (core)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/agent-session.ts", "source_location": null},
+    {"id": "core_compaction", "label": "Compaction Engine (compact/generateSummary)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/compaction/index.ts", "source_location": null},
+    {"id": "core_session_manager", "label": "SessionManager", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/session-manager.ts", "source_location": null},
+    {"id": "core_settings_manager", "label": "SettingsManager (core impl)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/settings-manager.ts", "source_location": null},
+    {"id": "core_model_resolver", "label": "Model Resolver (parseModelPattern/resolveCliModel)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/model-resolver.ts", "source_location": null},
+    {"id": "core_model_registry", "label": "ModelRegistry", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/model-registry.ts", "source_location": null},
+    {"id": "core_skills", "label": "Skills Loader (loadSkills/loadSkillsFromDir/formatSkillsForPrompt)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/skills.ts", "source_location": null},
+    {"id": "core_extensions_runtime", "label": "Extension Runtime (createExtensionRuntime)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/extensions/index.ts", "source_location": null},
+    {"id": "core_sdk", "label": "SDK createAgentSession", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/sdk.ts", "source_location": null},
+    {"id": "core_auth_storage", "label": "AuthStorage", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/auth-storage.ts", "source_location": null},
+    {"id": "core_resource_loader", "label": "DefaultResourceLoader", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/resource-loader.ts", "source_location": null},
+
+    {"id": "mode_interactive_InteractiveMode", "label": "InteractiveMode", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/interactive/interactive-mode.ts", "source_location": null},
+    {"id": "mode_interactive_TreeSelector", "label": "TreeSelectorComponent", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/interactive/components/tree-selector.ts", "source_location": null},
+    {"id": "mode_interactive_BashExecution", "label": "BashExecutionComponent", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/interactive/components/bash-execution.ts", "source_location": null},
+    {"id": "mode_interactive_Footer", "label": "FooterComponent / formatCwdForFooter", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/interactive/components/footer.ts", "source_location": null},
+    {"id": "mode_rpc_RpcClient", "label": "RpcClient", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/rpc/rpc-client.ts", "source_location": null},
+    {"id": "mode_print_PrintMode", "label": "runPrintMode", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/print-mode.ts", "source_location": null},
+
+    {"id": "util_clipboard_image", "label": "readClipboardImage util", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/clipboard-image.ts", "source_location": null},
+    {"id": "util_pi_user_agent", "label": "getPiUserAgent util", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/pi-user-agent.ts", "source_location": null},
+    {"id": "export_html_ansi_to_html", "label": "ansiLinesToHtml", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/export-html/ansi-to-html.ts", "source_location": null},
+    {"id": "export_html_tool_renderer", "label": "createToolHtmlRenderer", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/export-html/tool-renderer.ts", "source_location": null},
+    {"id": "core_http_dispatcher", "label": "HTTP Dispatcher (DEFAULT_HTTP_IDLE_TIMEOUT_MS)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/http-dispatcher.ts", "source_location": null},
+    {"id": "core_source_info", "label": "SourceInfo helpers (createSyntheticSourceInfo)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/source-info.ts", "source_location": null},
+
+    {"id": "concept_compaction_flow", "label": "Concept: Compaction Lifecycle (manual/threshold/overflow + before_compact/compact events)", "file_type": "document", "source_file": "pi/packages/coding-agent/test/compaction-extensions.test.ts", "source_location": null},
+    {"id": "concept_thinking_level_resolution", "label": "Concept: Thinking Level + Provider/Model Pattern Resolution", "file_type": "document", "source_file": "pi/packages/coding-agent/test/model-resolver.test.ts", "source_location": null},
+    {"id": "concept_tree_navigation", "label": "Concept: Session Tree Branch/Fold Navigation (ctrl/alt arrows, filter switching)", "file_type": "document", "source_file": "pi/packages/coding-agent/test/tree-selector.test.ts", "source_location": null},
+    {"id": "issue_2569_width_regression", "label": "Regression Issue #2569: stale construction-time width", "file_type": "document", "source_file": "pi/packages/coding-agent/test/bash-execution-width.test.ts", "source_location": null}
+  ],
+  "edges": [
+    {"source": "agent-session-compaction_compaction_e2e", "target": "core_AgentSession", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-compaction.test.ts", "weight": 1.0},
+    {"source": "agent-session-compaction_compaction_e2e", "target": "core_compaction", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-compaction.test.ts", "weight": 1.0},
+    {"source": "interactive-mode-compaction_handleEvent", "target": "mode_interactive_InteractiveMode", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/interactive-mode-compaction.test.ts", "weight": 1.0},
+    {"source": "interactive-mode-compaction_handleEvent", "target": "concept_compaction_flow", "relation": "rationale_for", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/interactive-mode-compaction.test.ts", "weight": 0.8},
+
+    {"source": "compaction-extensions_before_compact", "target": "core_AgentSession", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/compaction-extensions.test.ts", "weight": 1.0},
+    {"source": "compaction-extensions_before_compact", "target": "core_extensions_runtime", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/compaction-extensions.test.ts", "weight": 1.0},
+    {"source": "compaction-extensions_before_compact", "target": "concept_compaction_flow", "relation": "rationale_for", "confidence": "EXTRACTED", "confidence_score": 0.95, "source_file": "pi/packages/coding-agent/test/compaction-extensions.test.ts", "weight": 1.0},
+    {"source": "agent-session-compaction_compaction_e2e", "target": "compaction-extensions_before_compact", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/test/agent-session-compaction.test.ts", "weight": 0.8},
+
+    {"source": "compaction-summary-reasoning_generateSummary", "target": "core_compaction", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/compaction-summary-reasoning.test.ts", "weight": 1.0},
+    {"source": "compaction-summary-reasoning_generateSummary", "target": "concept_thinking_level_resolution", "relation": "rationale_for", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/test/compaction-summary-reasoning.test.ts", "weight": 0.7},
+
+    {"source": "tree-selector_TreeSelectorComponent", "target": "mode_interactive_TreeSelector", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/tree-selector.test.ts", "weight": 1.0},
+    {"source": "tree-selector_TreeSelectorComponent", "target": "core_session_manager", "relation": "shares_data_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/tree-selector.test.ts", "weight": 0.9},
+    {"source": "tree-selector_TreeSelectorComponent", "target": "concept_tree_navigation", "relation": "rationale_for", "confidence": "EXTRACTED", "confidence_score": 0.95, "source_file": "pi/packages/coding-agent/test/tree-selector.test.ts", "weight": 1.0},
+
+    {"source": "interactive-mode-status_showStatus", "target": "mode_interactive_InteractiveMode", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/interactive-mode-status.test.ts", "weight": 1.0},
+    {"source": "interactive-mode-anthropic-warning_subscription_auth", "target": "mode_interactive_InteractiveMode", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/interactive-mode-anthropic-warning.test.ts", "weight": 1.0},
+    {"source": "interactive-mode-anthropic-warning_subscription_auth", "target": "core_model_registry", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/interactive-mode-anthropic-warning.test.ts", "weight": 0.9},
+
+    {"source": "interactive-mode-import-command_handleImport", "target": "mode_interactive_InteractiveMode", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/interactive-mode-import-command.test.ts", "weight": 1.0},
+
+    {"source": "rpc-client-process-exit_RpcClient", "target": "mode_rpc_RpcClient", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/rpc-client-process-exit.test.ts", "weight": 1.0},
+    {"source": "rpc-example_main", "target": "mode_rpc_RpcClient", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/rpc-example.ts", "weight": 1.0},
+    {"source": "rpc-client-process-exit_RpcClient", "target": "rpc-example_main", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.75, "source_file": "pi/packages/coding-agent/test/rpc-client-process-exit.test.ts", "weight": 0.6},
+
+    {"source": "print-mode_runPrintMode", "target": "mode_print_PrintMode", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/print-mode.test.ts", "weight": 1.0},
+    {"source": "print-mode_runPrintMode", "target": "concept_compaction_flow", "relation": "conceptually_related_to", "confidence": "AMBIGUOUS", "confidence_score": 0.3, "source_file": "pi/packages/coding-agent/test/print-mode.test.ts", "weight": 0.3},
+
+    {"source": "model-resolver_parseModelPattern", "target": "core_model_resolver", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/model-resolver.test.ts", "weight": 1.0},
+    {"source": "model-resolver_parseModelPattern", "target": "concept_thinking_level_resolution", "relation": "rationale_for", "confidence": "EXTRACTED", "confidence_score": 0.95, "source_file": "pi/packages/coding-agent/test/model-resolver.test.ts", "weight": 1.0},
+
+    {"source": "agent-session-dynamic-tools_dynamic_tools", "target": "core_sdk", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-dynamic-tools.test.ts", "weight": 1.0},
+    {"source": "agent-session-dynamic-tools_dynamic_tools", "target": "core_resource_loader", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-dynamic-tools.test.ts", "weight": 0.9},
+    {"source": "sdk-skills_createAgentSession", "target": "core_sdk", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/sdk-skills.test.ts", "weight": 1.0},
+    {"source": "agent-session-dynamic-tools_dynamic_tools", "target": "sdk-skills_createAgentSession", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/agent-session-dynamic-tools.test.ts", "weight": 0.8},
+
+    {"source": "skills_loadSkills", "target": "core_skills", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/skills.test.ts", "weight": 1.0},
+    {"source": "skills_loadSkills", "target": "core_source_info", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/skills.test.ts", "weight": 0.8},
+
+    {"source": "bash-execution-width_BashExecutionComponent", "target": "mode_interactive_BashExecution", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/bash-execution-width.test.ts", "weight": 1.0},
+    {"source": "bash-execution-width_BashExecutionComponent", "target": "issue_2569_width_regression", "relation": "rationale_for", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/bash-execution-width.test.ts", "weight": 1.0},
+    {"source": "footer-width_FooterComponent", "target": "mode_interactive_Footer", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/footer-width.test.ts", "weight": 1.0},
+    {"source": "footer-width_FooterComponent", "target": "issue_2569_width_regression", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.75, "source_file": "pi/packages/coding-agent/test/footer-width.test.ts", "weight": 0.7},
+
+    {"source": "clipboard-image-bmp_bmp_conversion", "target": "util_clipboard_image", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/clipboard-image-bmp-conversion.test.ts", "weight": 1.0},
+    {"source": "export-html-whitespace_tool_output", "target": "export_html_ansi_to_html", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/export-html-whitespace.test.ts", "weight": 1.0},
+    {"source": "export-html-whitespace_tool_output", "target": "export_html_tool_renderer", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/export-html-whitespace.test.ts", "weight": 1.0},
+
+    {"source": "settings-manager_SettingsManager", "target": "core_settings_manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/settings-manager.test.ts", "weight": 1.0},
+    {"source": "settings-manager_SettingsManager", "target": "core_http_dispatcher", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/settings-manager.test.ts", "weight": 0.7},
+
+    {"source": "pi-user-agent_getPiUserAgent", "target": "util_pi_user_agent", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/pi-user-agent.test.ts", "weight": 1.0},
+    {"source": "session-id-readonly_cli", "target": "core_session_manager", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/session-id-readonly.test.ts", "weight": 0.8},
+
+    {"source": "interactive-mode-status_showStatus", "target": "mode_interactive_Footer", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "pi/packages/coding-agent/test/interactive-mode-status.test.ts", "weight": 0.6}
+  ],
+  "hyperedges": [
+    {"nodes": ["agent-session-compaction_compaction_e2e", "compaction-extensions_before_compact", "compaction-summary-reasoning_generateSummary", "interactive-mode-compaction_handleEvent", "core_compaction"], "relation": "compaction_feature_cluster", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/compaction-extensions.test.ts"},
+    {"nodes": ["model-resolver_parseModelPattern", "interactive-mode-anthropic-warning_subscription_auth", "core_model_resolver", "core_model_registry", "concept_thinking_level_resolution"], "relation": "model_selection_and_auth_cluster", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/test/model-resolver.test.ts"},
+    {"nodes": ["bash-execution-width_BashExecutionComponent", "footer-width_FooterComponent", "tree-selector_TreeSelectorComponent", "interactive-mode-status_showStatus", "issue_2569_width_regression"], "relation": "interactive_tui_rendering_width_cluster", "confidence": "INFERRED", "confidence_score": 0.82, "source_file": "pi/packages/coding-agent/test/bash-execution-width.test.ts"}
+  ]
+}

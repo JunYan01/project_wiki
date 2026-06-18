@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {"id":"stream_test","label":"E2E Generate Stream Tests","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_complete","label":"complete() stream helper","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_stream","label":"stream() async generator","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_calculator_tool","label":"math_operation calculator tool","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_handleToolCall","label":"handleToolCall assertion helper","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_handleThinking","label":"handleThinking assertion helper","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_handleStreaming","label":"handleStreaming text helper","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_multiTurn","label":"multiTurn thinking+tool helper","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_handleImage","label":"handleImage vision helper","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+    {"id":"stream_stringenum_rationale","label":"StringEnum Google anyOf/const rationale","file_type":"code","source_file":"pi/packages/ai/test/stream.test.ts","source_location":null},
+
+    {"id":"codex_cache_affinity_test","label":"OpenAI Codex Cache Affinity E2E","file_type":"code","source_file":"pi/packages/ai/test/openai-codex-cache-affinity-e2e.test.ts","source_location":null},
+    {"id":"codex_cache_affinity_session","label":"cache-affinity sessionId SSE","file_type":"code","source_file":"pi/packages/ai/test/openai-codex-cache-affinity-e2e.test.ts","source_location":null},
+
+    {"id":"anthropic_eager_tool_input_test","label":"Anthropic Eager Tool Input Streaming E2E","file_type":"code","source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","source_location":null},
+    {"id":"eager_probe_priority","label":"getProbePriority cost+Haiku heuristic","file_type":"code","source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","source_location":null},
+    {"id":"eager_with_compat","label":"withEagerToolInputStreaming compat override","file_type":"code","source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","source_location":null},
+    {"id":"eager_select_one_per_provider","label":"selectOneCasePerProvider dedup","file_type":"code","source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","source_location":null},
+
+    {"id":"mistral_tool_schema_test","label":"Mistral Tool Schema Serialization","file_type":"code","source_file":"pi/packages/ai/test/mistral-tool-schema.test.ts","source_location":null},
+    {"id":"mistral_typebox_strip","label":"strip TypeBox symbol keys pre-validation","file_type":"code","source_file":"pi/packages/ai/test/mistral-tool-schema.test.ts","source_location":null},
+
+    {"id":"transform_copilot_oai_to_anthropic_test","label":"Copilot OpenAI->Anthropic message transform","file_type":"code","source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts","source_location":null},
+    {"id":"transform_thinking_to_text","label":"convert thinking to text on model mismatch","file_type":"code","source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts","source_location":null},
+    {"id":"transform_synthetic_tool_result","label":"synthetic orphan tool result injection","file_type":"code","source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts","source_location":null},
+    {"id":"transform_normalize_tool_call_id","label":"anthropicNormalizeToolCallId","file_type":"code","source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts","source_location":null},
+
+    {"id":"anthropic_empty_thinking_sig_test","label":"Anthropic Empty Thinking Signature Compat","file_type":"code","source_file":"pi/packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts","source_location":null},
+    {"id":"empty_sig_allow_compat","label":"allowEmptySignature compat flag","file_type":"code","source_file":"pi/packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts","source_location":null},
+
+    {"id":"google_unsigned_toolcall_test","label":"Gemini3 Unsigned Tool Call Handling","file_type":"code","source_file":"pi/packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts","source_location":null},
+    {"id":"google_skip_sig_validator","label":"skip_thought_signature_validator omission","file_type":"code","source_file":"pi/packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts","source_location":null},
+
+    {"id":"unicode_surrogate_test","label":"Unicode Surrogate Pair Sanitization E2E","file_type":"code","source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","source_location":null},
+    {"id":"unicode_emoji_tool_result","label":"testEmojiInToolResults","file_type":"code","source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","source_location":null},
+    {"id":"unicode_unpaired_surrogate","label":"testUnpairedHighSurrogate 0xD83D","file_type":"code","source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","source_location":null},
+    {"id":"unicode_no_low_surrogate_error","label":"Anthropic 'no low surrogate' JSON error","file_type":"code","source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","source_location":null},
+
+    {"id":"cache_retention_test","label":"Cache Retention (PI_CACHE_RETENTION)","file_type":"code","source_file":"pi/packages/ai/test/cache-retention.test.ts","source_location":null},
+    {"id":"cache_retention_anthropic_ttl","label":"Anthropic cache_control ttl 1h","file_type":"code","source_file":"pi/packages/ai/test/cache-retention.test.ts","source_location":null},
+    {"id":"cache_retention_oai_retention","label":"OpenAI prompt_cache_retention 24h","file_type":"code","source_file":"pi/packages/ai/test/cache-retention.test.ts","source_location":null},
+    {"id":"cache_retention_supports_long","label":"supportsLongCacheRetention compat flag","file_type":"code","source_file":"pi/packages/ai/test/cache-retention.test.ts","source_location":null},
+
+    {"id":"anthropic_temperature_compat_test","label":"Anthropic Temperature Compat","file_type":"code","source_file":"pi/packages/ai/test/anthropic-temperature-compat.test.ts","source_location":null},
+    {"id":"temperature_omit_opus47_48","label":"omit temperature Opus 4.7/4.8","file_type":"code","source_file":"pi/packages/ai/test/anthropic-temperature-compat.test.ts","source_location":null},
+    {"id":"temperature_supports_temp","label":"supportsTemperature compat flag","file_type":"code","source_file":"pi/packages/ai/test/anthropic-temperature-compat.test.ts","source_location":null},
+
+    {"id":"bedrock_utils","label":"hasBedrockCredentials utility","file_type":"code","source_file":"pi/packages/ai/test/bedrock-utils.ts","source_location":null},
+
+    {"id":"adaptive_thinking_models_test","label":"Anthropic Adaptive Thinking Model Metadata","file_type":"code","source_file":"pi/packages/ai/test/anthropic-adaptive-thinking-models.test.ts","source_location":null},
+    {"id":"adaptive_thinking_force_flag","label":"forceAdaptiveThinking metadata flag","file_type":"code","source_file":"pi/packages/ai/test/anthropic-adaptive-thinking-models.test.ts","source_location":null},
+
+    {"id":"xiaomi_models_test","label":"Xiaomi MiMo model catalog","file_type":"code","source_file":"pi/packages/ai/test/xiaomi-models.test.ts","source_location":null},
+    {"id":"xiaomi_flash_api_only","label":"mimo-v2-flash API-billing-only placement","file_type":"code","source_file":"pi/packages/ai/test/xiaomi-models.test.ts","source_location":null},
+
+    {"id":"anthropic_tool_name_norm_test","label":"Anthropic OAuth Tool Name Normalization","file_type":"code","source_file":"pi/packages/ai/test/anthropic-tool-name-normalization.test.ts","source_location":null},
+    {"id":"toolname_cc_casing_roundtrip","label":"CC canonical casing round-trip","file_type":"code","source_file":"pi/packages/ai/test/anthropic-tool-name-normalization.test.ts","source_location":null},
+    {"id":"toolname_find_glob_anti_rationale","label":"find->Glob mapping anti-pattern rationale","file_type":"code","source_file":"pi/packages/ai/test/anthropic-tool-name-normalization.test.ts","source_location":null},
+
+    {"id":"env_api_keys_test","label":"Environment API Keys Resolution","file_type":"code","source_file":"pi/packages/ai/test/env-api-keys.test.ts","source_location":null},
+    {"id":"env_copilot_token","label":"COPILOT_GITHUB_TOKEN resolution","file_type":"code","source_file":"pi/packages/ai/test/env-api-keys.test.ts","source_location":null},
+
+    {"id":"google_thinking_signature_test","label":"Google thoughtSignature Detection","file_type":"code","source_file":"pi/packages/ai/test/google-thinking-signature.test.ts","source_location":null},
+    {"id":"google_isThinkingPart","label":"isThinkingPart thought===true","file_type":"code","source_file":"pi/packages/ai/test/google-thinking-signature.test.ts","source_location":null},
+    {"id":"google_retain_sig","label":"retainThoughtSignature delta merge","file_type":"code","source_file":"pi/packages/ai/test/google-thinking-signature.test.ts","source_location":null},
+
+    {"id":"oai_foreign_toolcall_id_test","label":"OpenAI Responses Foreign ToolCall ID","file_type":"code","source_file":"pi/packages/ai/test/openai-responses-foreign-toolcall-id.test.ts","source_location":null},
+    {"id":"foreign_id_short_hash","label":"fc_<shortHash> foreign ID normalization","file_type":"code","source_file":"pi/packages/ai/test/openai-responses-foreign-toolcall-id.test.ts","source_location":null},
+
+    {"id":"openrouter_images_test","label":"OpenRouter Image Generation","file_type":"code","source_file":"pi/packages/ai/test/openrouter-images.test.ts","source_location":null},
+    {"id":"openrouter_images_abort","label":"OpenRouter abort signal passthrough","file_type":"code","source_file":"pi/packages/ai/test/openrouter-images.test.ts","source_location":null},
+
+    {"id":"oai_tool_result_images_test","label":"Responses tool-result images in function_call_output","file_type":"code","source_file":"pi/packages/ai/test/openai-responses-tool-result-images.test.ts","source_location":null},
+
+    {"id":"force_adaptive_thinking_test","label":"forceAdaptiveThinking compat override","file_type":"code","source_file":"pi/packages/ai/test/anthropic-force-adaptive-thinking.test.ts","source_location":null},
+    {"id":"force_adaptive_adaptive_payload","label":"adaptive thinking payload {adaptive,summarized}","file_type":"code","source_file":"pi/packages/ai/test/anthropic-force-adaptive-thinking.test.ts","source_location":null},
+
+    {"id":"oai_completions_retry_test","label":"OpenAI Completions SDK Retry Control","file_type":"code","source_file":"pi/packages/ai/test/openai-completions-retry.test.ts","source_location":null},
+    {"id":"oai_retry_max_zero","label":"maxRetries default 0","file_type":"code","source_file":"pi/packages/ai/test/openai-completions-retry.test.ts","source_location":null},
+
+    {"id":"interleaved_thinking_test","label":"Interleaved Thinking (Bedrock/Anthropic)","file_type":"code","source_file":"pi/packages/ai/test/interleaved-thinking.test.ts","source_location":null},
+    {"id":"interleaved_second_toolcall","label":"assertSecondToolCallWithInterleavedThinking","file_type":"code","source_file":"pi/packages/ai/test/interleaved-thinking.test.ts","source_location":null},
+
+    {"id":"src_stream","label":"src/stream.ts","file_type":"code","source_file":"pi/packages/ai/src/stream.ts","source_location":null},
+    {"id":"src_models","label":"src/models.ts","file_type":"code","source_file":"pi/packages/ai/src/models.ts","source_location":null},
+    {"id":"src_types","label":"src/types.ts","file_type":"code","source_file":"pi/packages/ai/src/types.ts","source_location":null},
+    {"id":"src_transform_messages","label":"src/providers/transform-messages.ts","file_type":"code","source_file":"pi/packages/ai/src/providers/transform-messages.ts","source_location":null},
+    {"id":"src_google_shared","label":"src/providers/google-shared.ts","file_type":"code","source_file":"pi/packages/ai/src/providers/google-shared.ts","source_location":null},
+    {"id":"src_oai_responses_shared","label":"src/providers/openai-responses-shared.ts","file_type":"code","source_file":"pi/packages/ai/src/providers/openai-responses-shared.ts","source_location":null},
+    {"id":"src_anthropic_provider","label":"src/providers/anthropic.ts","file_type":"code","source_file":"pi/packages/ai/src/providers/anthropic.ts","source_location":null},
+    {"id":"src_oai_completions_provider","label":"src/providers/openai-completions.ts","file_type":"code","source_file":"pi/packages/ai/src/providers/openai-completions.ts","source_location":null},
+    {"id":"src_oai_responses_provider","label":"src/providers/openai-responses.ts","file_type":"code","source_file":"pi/packages/ai/src/providers/openai-responses.ts","source_location":null},
+    {"id":"src_env_api_keys","label":"src/env-api-keys.ts","file_type":"code","source_file":"pi/packages/ai/src/env-api-keys.ts","source_location":null},
+    {"id":"src_images","label":"src/images.ts","file_type":"code","source_file":"pi/packages/ai/src/images.ts","source_location":null},
+    {"id":"src_hash","label":"src/utils/hash.ts shortHash","file_type":"code","source_file":"pi/packages/ai/src/utils/hash.ts","source_location":null},
+    {"id":"test_oauth","label":"test/oauth.ts resolveApiKey","file_type":"code","source_file":"pi/packages/ai/test/oauth.ts","source_location":null},
+    {"id":"test_azure_utils","label":"test/azure-utils.ts","file_type":"code","source_file":"pi/packages/ai/test/azure-utils.ts","source_location":null}
+  ],
+  "edges": [
+    {"source":"stream_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"stream_test","target":"src_models","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"stream_handleToolCall","target":"stream_stream","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"stream_handleThinking","target":"stream_stream","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"stream_handleImage","target":"stream_complete","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"stream_multiTurn","target":"stream_calculator_tool","relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"stream_stringenum_rationale","target":"stream_calculator_tool","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+
+    {"source":"codex_cache_affinity_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-codex-cache-affinity-e2e.test.ts","weight":1.0},
+    {"source":"codex_cache_affinity_session","target":"codex_cache_affinity_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/openai-codex-cache-affinity-e2e.test.ts","weight":1.0},
+
+    {"source":"anthropic_eager_tool_input_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","weight":1.0},
+    {"source":"anthropic_eager_tool_input_test","target":"src_env_api_keys","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","weight":1.0},
+    {"source":"eager_with_compat","target":"eager_probe_priority","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.7,"source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","weight":1.0},
+    {"source":"eager_select_one_per_provider","target":"eager_probe_priority","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","weight":1.0},
+
+    {"source":"mistral_tool_schema_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/mistral-tool-schema.test.ts","weight":1.0},
+    {"source":"mistral_typebox_strip","target":"mistral_tool_schema_test","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/mistral-tool-schema.test.ts","weight":1.0},
+
+    {"source":"transform_copilot_oai_to_anthropic_test","target":"src_transform_messages","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts","weight":1.0},
+    {"source":"transform_normalize_tool_call_id","target":"src_anthropic_provider","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts","weight":1.0},
+    {"source":"transform_synthetic_tool_result","target":"transform_copilot_oai_to_anthropic_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts","weight":1.0},
+
+    {"source":"anthropic_empty_thinking_sig_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts","weight":1.0},
+    {"source":"empty_sig_allow_compat","target":"anthropic_empty_thinking_sig_test","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-empty-thinking-signature-compat.test.ts","weight":1.0},
+
+    {"source":"google_unsigned_toolcall_test","target":"src_google_shared","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts","weight":1.0},
+    {"source":"google_skip_sig_validator","target":"google_unsigned_toolcall_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/ai/test/google-shared-gemini3-unsigned-tool-call.test.ts","weight":1.0},
+
+    {"source":"unicode_surrogate_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","weight":1.0},
+    {"source":"unicode_emoji_tool_result","target":"unicode_surrogate_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","weight":1.0},
+    {"source":"unicode_unpaired_surrogate","target":"unicode_no_low_surrogate_error","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","weight":1.0},
+
+    {"source":"cache_retention_test","target":"src_anthropic_provider","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/cache-retention.test.ts","weight":1.0},
+    {"source":"cache_retention_test","target":"src_oai_responses_provider","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/cache-retention.test.ts","weight":1.0},
+    {"source":"cache_retention_test","target":"src_oai_completions_provider","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/cache-retention.test.ts","weight":1.0},
+    {"source":"cache_retention_anthropic_ttl","target":"cache_retention_oai_retention","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/ai/test/cache-retention.test.ts","weight":1.0},
+
+    {"source":"anthropic_temperature_compat_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-temperature-compat.test.ts","weight":1.0},
+    {"source":"temperature_omit_opus47_48","target":"temperature_supports_temp","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/anthropic-temperature-compat.test.ts","weight":1.0},
+
+    {"source":"stream_test","target":"bedrock_utils","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"unicode_surrogate_test","target":"bedrock_utils","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","weight":1.0},
+    {"source":"interleaved_thinking_test","target":"bedrock_utils","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/interleaved-thinking.test.ts","weight":1.0},
+
+    {"source":"adaptive_thinking_models_test","target":"src_models","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-adaptive-thinking-models.test.ts","weight":1.0},
+    {"source":"adaptive_thinking_force_flag","target":"force_adaptive_adaptive_payload","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/ai/test/anthropic-adaptive-thinking-models.test.ts","weight":1.0},
+
+    {"source":"xiaomi_models_test","target":"src_models","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/xiaomi-models.test.ts","weight":1.0},
+    {"source":"xiaomi_flash_api_only","target":"xiaomi_models_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/xiaomi-models.test.ts","weight":1.0},
+
+    {"source":"anthropic_tool_name_norm_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-tool-name-normalization.test.ts","weight":1.0},
+    {"source":"toolname_find_glob_anti_rationale","target":"toolname_cc_casing_roundtrip","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-tool-name-normalization.test.ts","weight":1.0},
+
+    {"source":"env_api_keys_test","target":"src_env_api_keys","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/env-api-keys.test.ts","weight":1.0},
+    {"source":"env_copilot_token","target":"env_api_keys_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/env-api-keys.test.ts","weight":1.0},
+
+    {"source":"google_thinking_signature_test","target":"src_google_shared","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/google-thinking-signature.test.ts","weight":1.0},
+    {"source":"google_retain_sig","target":"google_isThinkingPart","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/ai/test/google-thinking-signature.test.ts","weight":1.0},
+
+    {"source":"oai_foreign_toolcall_id_test","target":"src_oai_responses_shared","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-responses-foreign-toolcall-id.test.ts","weight":1.0},
+    {"source":"foreign_id_short_hash","target":"src_hash","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-responses-foreign-toolcall-id.test.ts","weight":1.0},
+
+    {"source":"openrouter_images_test","target":"src_images","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openrouter-images.test.ts","weight":1.0},
+    {"source":"openrouter_images_abort","target":"openrouter_images_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/openrouter-images.test.ts","weight":1.0},
+
+    {"source":"oai_tool_result_images_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-responses-tool-result-images.test.ts","weight":1.0},
+
+    {"source":"force_adaptive_thinking_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-force-adaptive-thinking.test.ts","weight":1.0},
+    {"source":"force_adaptive_adaptive_payload","target":"adaptive_thinking_force_flag","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/ai/test/anthropic-force-adaptive-thinking.test.ts","weight":1.0},
+
+    {"source":"oai_completions_retry_test","target":"src_oai_completions_provider","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-completions-retry.test.ts","weight":1.0},
+    {"source":"oai_retry_max_zero","target":"oai_completions_retry_test","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-completions-retry.test.ts","weight":1.0},
+
+    {"source":"interleaved_thinking_test","target":"src_stream","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/interleaved-thinking.test.ts","weight":1.0},
+    {"source":"interleaved_second_toolcall","target":"interleaved_thinking_test","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/interleaved-thinking.test.ts","weight":1.0},
+
+    {"source":"stream_test","target":"test_oauth","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"codex_cache_affinity_test","target":"test_oauth","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-codex-cache-affinity-e2e.test.ts","weight":1.0},
+    {"source":"anthropic_eager_tool_input_test","target":"test_oauth","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/anthropic-eager-tool-input-e2e.test.ts","weight":1.0},
+    {"source":"unicode_surrogate_test","target":"test_oauth","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","weight":1.0},
+    {"source":"stream_test","target":"test_azure_utils","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/stream.test.ts","weight":1.0},
+    {"source":"unicode_surrogate_test","target":"test_azure_utils","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/unicode-surrogate.test.ts","weight":1.0},
+    {"source":"oai_tool_result_images_test","target":"test_azure_utils","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/ai/test/openai-responses-tool-result-images.test.ts","weight":1.0},
+
+    {"source":"force_adaptive_thinking_test","target":"adaptive_thinking_models_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/ai/test/anthropic-force-adaptive-thinking.test.ts","weight":1.0},
+    {"source":"cache_retention_supports_long","target":"empty_sig_allow_compat","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/cache-retention.test.ts","weight":1.0},
+    {"source":"google_isThinkingPart","target":"transform_thinking_to_text","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.75,"source_file":"pi/packages/ai/test/google-thinking-signature.test.ts","weight":1.0},
+    {"source":"interleaved_thinking_test","target":"stream_handleThinking","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.7,"source_file":"pi/packages/ai/test/interleaved-thinking.test.ts","weight":1.0},
+    {"source":"cache_retention_oai_retention","target":"codex_cache_affinity_session","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.72,"source_file":"pi/packages/ai/test/cache-retention.test.ts","weight":1.0},
+    {"source":"oai_tool_result_images_test","target":"stream_handleImage","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.65,"source_file":"pi/packages/ai/test/openai-responses-tool-result-images.test.ts","weight":1.0},
+    {"source":"foreign_id_short_hash","target":"transform_normalize_tool_call_id","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.78,"source_file":"pi/packages/ai/test/openai-responses-foreign-toolcall-id.test.ts","weight":1.0},
+    {"source":"oai_completions_retry_test","target":"cache_retention_test","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.6,"source_file":"pi/packages/ai/test/openai-completions-retry.test.ts","weight":1.0},
+    {"source":"temperature_omit_opus47_48","target":"force_adaptive_adaptive_payload","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.65,"source_file":"pi/packages/ai/test/anthropic-temperature-compat.test.ts","weight":1.0}
+  ],
+  "hyperedges": [
+    {"id":"he_compat_flag_matrix","nodes":["cache_retention_supports_long","empty_sig_allow_compat","temperature_supports_temp","adaptive_thinking_force_flag"],"relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/ai/test/cache-retention.test.ts"},
+    {"id":"he_anthropic_thinking_lifecycle","nodes":["interleaved_thinking_test","force_adaptive_thinking_test","anthropic_empty_thinking_sig_test","adaptive_thinking_models_test"],"relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.82,"source_file":"pi/packages/ai/test/anthropic-force-adaptive-thinking.test.ts"},
+    {"id":"he_tool_id_normalization","nodes":["transform_normalize_tool_call_id","foreign_id_short_hash","toolname_cc_casing_roundtrip"],"relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts"}
+  ]
+}

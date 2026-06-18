@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {"id":"exif-orientation_applyExifOrientation","label":"applyExifOrientation","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","source_location":null},
+    {"id":"exif-orientation_getExifOrientation","label":"getExifOrientation","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","source_location":null},
+    {"id":"exif-orientation_readOrientationFromTiff","label":"readOrientationFromTiff","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","source_location":null},
+    {"id":"exif-orientation_findJpegTiffOffset","label":"findJpegTiffOffset","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","source_location":null},
+    {"id":"exif-orientation_findWebpTiffOffset","label":"findWebpTiffOffset","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","source_location":null},
+    {"id":"exif-orientation_rotate90","label":"rotate90","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","source_location":null},
+
+    {"id":"git_parseGitUrl","label":"parseGitUrl","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/git.ts","source_location":null},
+    {"id":"git_GitSource","label":"GitSource Type","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/git.ts","source_location":null},
+    {"id":"git_splitRef","label":"splitRef","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/git.ts","source_location":null},
+    {"id":"git_buildGitSource","label":"buildGitSource","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/git.ts","source_location":null},
+    {"id":"git_parseGenericGitUrl","label":"parseGenericGitUrl","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/git.ts","source_location":null},
+    {"id":"git_hasUnsafeGitInstallPart","label":"hasUnsafeGitInstallPart","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/git.ts","source_location":null},
+
+    {"id":"syntax-highlight_highlight","label":"highlight","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/syntax-highlight.ts","source_location":null},
+    {"id":"syntax-highlight_renderHighlightedHtml","label":"renderHighlightedHtml","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/syntax-highlight.ts","source_location":null},
+    {"id":"syntax-highlight_getScopeFormatter","label":"getScopeFormatter","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/syntax-highlight.ts","source_location":null},
+    {"id":"syntax-highlight_supportsLanguage","label":"supportsLanguage","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/syntax-highlight.ts","source_location":null},
+
+    {"id":"mime_detectSupportedImageMimeType","label":"detectSupportedImageMimeType","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/mime.ts","source_location":null},
+    {"id":"mime_detectSupportedImageMimeTypeFromFile","label":"detectSupportedImageMimeTypeFromFile","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/mime.ts","source_location":null},
+    {"id":"mime_isAnimatedPng","label":"isAnimatedPng","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/mime.ts","source_location":null},
+    {"id":"mime_isPng","label":"isPng","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/mime.ts","source_location":null},
+
+    {"id":"tools-manager_ensureTool","label":"ensureTool","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","source_location":null},
+    {"id":"tools-manager_getToolPath","label":"getToolPath","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","source_location":null},
+    {"id":"tools-manager_downloadTool","label":"downloadTool","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","source_location":null},
+    {"id":"tools-manager_getLatestVersion","label":"getLatestVersion","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","source_location":null},
+    {"id":"tools-manager_ToolsConfig","label":"TOOLS Config (fd/rg)","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","source_location":null},
+
+    {"id":"test_auto_compaction_queue","label":"AgentSession auto-compaction queue test","file_type":"code","source_file":"pi/packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts","source_location":null},
+    {"id":"test_pm_ssh","label":"Package Manager git source parsing test","file_type":"code","source_file":"pi/packages/coding-agent/test/package-manager-ssh.test.ts","source_location":null},
+    {"id":"test_edit_no_full_redraw","label":"Edit tool TUI rendering test","file_type":"code","source_file":"pi/packages/coding-agent/test/edit-tool-no-full-redraw.test.ts","source_location":null},
+    {"id":"test_file_mutation_queue","label":"withFileMutationQueue test","file_type":"code","source_file":"pi/packages/coding-agent/test/file-mutation-queue.test.ts","source_location":null},
+    {"id":"test_footer_data_provider","label":"FooterDataProvider reftable branch detection test","file_type":"code","source_file":"pi/packages/coding-agent/test/footer-data-provider.test.ts","source_location":null},
+    {"id":"test_sdk_stream_options","label":"createAgentSession stream options test","file_type":"code","source_file":"pi/packages/coding-agent/test/sdk-stream-options.test.ts","source_location":null},
+    {"id":"test_path_utils","label":"path-utils expandPath/resolveReadPath test","file_type":"code","source_file":"pi/packages/coding-agent/test/path-utils.test.ts","source_location":null},
+    {"id":"test_session_info_modified","label":"SessionInfo.modified timestamp test","file_type":"code","source_file":"pi/packages/coding-agent/test/session-info-modified-timestamp.test.ts","source_location":null},
+    {"id":"test_tree_navigation","label":"AgentSession tree navigation e2e test","file_type":"code","source_file":"pi/packages/coding-agent/test/agent-session-tree-navigation.test.ts","source_location":null},
+    {"id":"test_auth_storage","label":"AuthStorage API key resolution test","file_type":"code","source_file":"pi/packages/coding-agent/test/auth-storage.test.ts","source_location":null},
+    {"id":"test_theme_detection","label":"theme detection test","file_type":"code","source_file":"pi/packages/coding-agent/test/theme-detection.test.ts","source_location":null},
+    {"id":"test_changelog","label":"normalizeChangelogLinks test","file_type":"code","source_file":"pi/packages/coding-agent/test/changelog.test.ts","source_location":null},
+    {"id":"test_sdk_codex_cache_probe","label":"SDK Codex cache probe tool loop","file_type":"code","source_file":"pi/packages/coding-agent/test/sdk-codex-cache-probe-tool-loop.ts","source_location":null},
+    {"id":"test_agent_session_concurrent","label":"AgentSession concurrent prompt guard test","file_type":"code","source_file":"pi/packages/coding-agent/test/agent-session-concurrent.test.ts","source_location":null},
+    {"id":"test_utilities","label":"Shared test utilities","file_type":"code","source_file":"pi/packages/coding-agent/test/utilities.ts","source_location":null},
+    {"id":"test_startup_session_name","label":"startup session name test","file_type":"code","source_file":"pi/packages/coding-agent/test/startup-session-name.test.ts","source_location":null},
+    {"id":"test_dynamic_provider","label":"AgentSession dynamic provider registration test","file_type":"code","source_file":"pi/packages/coding-agent/test/agent-session-dynamic-provider.test.ts","source_location":null},
+
+    {"id":"core_AgentSession","label":"AgentSession (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/agent-session.ts","source_location":null},
+    {"id":"core_AuthStorage","label":"AuthStorage (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/auth-storage.ts","source_location":null},
+    {"id":"core_SessionManager","label":"SessionManager (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/session-manager.ts","source_location":null},
+    {"id":"core_PackageManager","label":"DefaultPackageManager (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/package-manager.ts","source_location":null},
+    {"id":"core_edit_tool","label":"createEditTool (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/tools/edit.ts","source_location":null},
+    {"id":"core_write_tool","label":"createWriteTool (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/tools/write.ts","source_location":null},
+    {"id":"core_file_mutation_queue","label":"withFileMutationQueue (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/tools/file-mutation-queue.ts","source_location":null},
+    {"id":"core_path_utils","label":"path-utils (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/tools/path-utils.ts","source_location":null},
+    {"id":"core_FooterDataProvider","label":"FooterDataProvider (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/footer-data-provider.ts","source_location":null},
+    {"id":"core_sdk","label":"createAgentSession SDK (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/sdk.ts","source_location":null},
+    {"id":"core_theme","label":"theme (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/modes/interactive/theme/theme.ts","source_location":null},
+    {"id":"core_changelog","label":"changelog utils (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/utils/changelog.ts","source_location":null},
+    {"id":"core_cli","label":"cli (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/cli.ts","source_location":null},
+    {"id":"core_compaction","label":"compaction index (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/compaction/index.ts","source_location":null},
+    {"id":"core_resolve_config_value","label":"resolveConfigValue cache (core)","file_type":"code","source_file":"pi/packages/coding-agent/src/core/resolve-config-value.ts","source_location":null},
+    {"id":"ai_openai_codex_responses","label":"OpenAI Codex responses provider","file_type":"code","source_file":"pi/packages/ai/src/providers/openai-codex-responses.ts","source_location":null}
+  ],
+  "edges": [
+    {"source":"exif-orientation_applyExifOrientation","target":"exif-orientation_getExifOrientation","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","weight":1.0},
+    {"source":"exif-orientation_getExifOrientation","target":"exif-orientation_findJpegTiffOffset","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","weight":1.0},
+    {"source":"exif-orientation_getExifOrientation","target":"exif-orientation_findWebpTiffOffset","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","weight":1.0},
+    {"source":"exif-orientation_getExifOrientation","target":"exif-orientation_readOrientationFromTiff","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","weight":1.0},
+    {"source":"exif-orientation_applyExifOrientation","target":"exif-orientation_rotate90","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","weight":1.0},
+    {"source":"exif-orientation_findJpegTiffOffset","target":"mime_detectSupportedImageMimeType","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","weight":0.8},
+
+    {"source":"git_parseGitUrl","target":"git_splitRef","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/git.ts","weight":1.0},
+    {"source":"git_parseGitUrl","target":"git_buildGitSource","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/git.ts","weight":1.0},
+    {"source":"git_parseGitUrl","target":"git_parseGenericGitUrl","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/git.ts","weight":1.0},
+    {"source":"git_parseGenericGitUrl","target":"git_buildGitSource","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/git.ts","weight":1.0},
+    {"source":"git_buildGitSource","target":"git_hasUnsafeGitInstallPart","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/git.ts","weight":1.0},
+    {"source":"git_parseGitUrl","target":"git_GitSource","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/git.ts","weight":1.0},
+
+    {"source":"syntax-highlight_highlight","target":"syntax-highlight_renderHighlightedHtml","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/syntax-highlight.ts","weight":1.0},
+    {"source":"syntax-highlight_renderHighlightedHtml","target":"syntax-highlight_getScopeFormatter","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/syntax-highlight.ts","weight":1.0},
+
+    {"source":"mime_detectSupportedImageMimeTypeFromFile","target":"mime_detectSupportedImageMimeType","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/mime.ts","weight":1.0},
+    {"source":"mime_detectSupportedImageMimeType","target":"mime_isPng","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/mime.ts","weight":1.0},
+    {"source":"mime_detectSupportedImageMimeType","target":"mime_isAnimatedPng","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/mime.ts","weight":1.0},
+
+    {"source":"tools-manager_ensureTool","target":"tools-manager_getToolPath","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","weight":1.0},
+    {"source":"tools-manager_ensureTool","target":"tools-manager_downloadTool","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","weight":1.0},
+    {"source":"tools-manager_downloadTool","target":"tools-manager_getLatestVersion","relation":"calls","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","weight":1.0},
+    {"source":"tools-manager_downloadTool","target":"tools-manager_ToolsConfig","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","weight":1.0},
+    {"source":"tools-manager_getToolPath","target":"tools-manager_ToolsConfig","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/tools-manager.ts","weight":1.0},
+
+    {"source":"test_auto_compaction_queue","target":"core_AgentSession","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts","weight":1.0},
+    {"source":"test_auto_compaction_queue","target":"core_compaction","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts","weight":1.0},
+    {"source":"test_auto_compaction_queue","target":"test_utilities","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts","weight":1.0},
+
+    {"source":"test_pm_ssh","target":"core_PackageManager","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/package-manager-ssh.test.ts","weight":1.0},
+    {"source":"test_pm_ssh","target":"git_parseGitUrl","relation":"references","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/test/package-manager-ssh.test.ts","weight":0.9},
+    {"source":"test_pm_ssh","target":"git_GitSource","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/package-manager-ssh.test.ts","weight":1.0},
+
+    {"source":"test_edit_no_full_redraw","target":"core_edit_tool","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/edit-tool-no-full-redraw.test.ts","weight":1.0},
+    {"source":"test_edit_no_full_redraw","target":"core_theme","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/edit-tool-no-full-redraw.test.ts","weight":1.0},
+
+    {"source":"test_file_mutation_queue","target":"core_file_mutation_queue","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/file-mutation-queue.test.ts","weight":1.0},
+    {"source":"test_file_mutation_queue","target":"core_edit_tool","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/file-mutation-queue.test.ts","weight":1.0},
+    {"source":"test_file_mutation_queue","target":"core_write_tool","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/file-mutation-queue.test.ts","weight":1.0},
+
+    {"source":"test_footer_data_provider","target":"core_FooterDataProvider","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/footer-data-provider.test.ts","weight":1.0},
+
+    {"source":"test_sdk_stream_options","target":"core_sdk","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/sdk-stream-options.test.ts","weight":1.0},
+    {"source":"test_sdk_stream_options","target":"core_AuthStorage","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/sdk-stream-options.test.ts","weight":1.0},
+
+    {"source":"test_path_utils","target":"core_path_utils","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/path-utils.test.ts","weight":1.0},
+
+    {"source":"test_session_info_modified","target":"core_SessionManager","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/session-info-modified-timestamp.test.ts","weight":1.0},
+    {"source":"test_session_info_modified","target":"core_theme","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/session-info-modified-timestamp.test.ts","weight":1.0},
+
+    {"source":"test_tree_navigation","target":"test_utilities","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-tree-navigation.test.ts","weight":1.0},
+    {"source":"test_tree_navigation","target":"core_AgentSession","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/test/agent-session-tree-navigation.test.ts","weight":0.8},
+
+    {"source":"test_auth_storage","target":"core_AuthStorage","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/auth-storage.test.ts","weight":1.0},
+    {"source":"test_auth_storage","target":"core_resolve_config_value","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/auth-storage.test.ts","weight":1.0},
+
+    {"source":"test_theme_detection","target":"core_theme","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/theme-detection.test.ts","weight":1.0},
+
+    {"source":"test_changelog","target":"core_changelog","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/changelog.test.ts","weight":1.0},
+
+    {"source":"test_sdk_codex_cache_probe","target":"core_sdk","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/sdk-codex-cache-probe-tool-loop.ts","weight":1.0},
+    {"source":"test_sdk_codex_cache_probe","target":"ai_openai_codex_responses","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/sdk-codex-cache-probe-tool-loop.ts","weight":1.0},
+
+    {"source":"test_agent_session_concurrent","target":"core_AgentSession","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-concurrent.test.ts","weight":1.0},
+    {"source":"test_agent_session_concurrent","target":"test_utilities","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-concurrent.test.ts","weight":1.0},
+
+    {"source":"test_dynamic_provider","target":"core_sdk","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-dynamic-provider.test.ts","weight":1.0},
+    {"source":"test_dynamic_provider","target":"core_AuthStorage","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/agent-session-dynamic-provider.test.ts","weight":1.0},
+
+    {"source":"test_utilities","target":"core_AgentSession","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/utilities.ts","weight":1.0},
+    {"source":"test_utilities","target":"core_AuthStorage","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/utilities.ts","weight":1.0},
+    {"source":"test_utilities","target":"core_SessionManager","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/utilities.ts","weight":1.0},
+
+    {"source":"test_startup_session_name","target":"core_cli","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/startup-session-name.test.ts","weight":1.0},
+
+    {"source":"test_sdk_codex_cache_probe","target":"test_sdk_stream_options","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.75,"source_file":"pi/packages/coding-agent/test/sdk-codex-cache-probe-tool-loop.ts","weight":0.7},
+    {"source":"test_agent_session_concurrent","target":"test_auto_compaction_queue","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.72,"source_file":"pi/packages/coding-agent/test/agent-session-concurrent.test.ts","weight":0.7},
+    {"source":"test_file_mutation_queue","target":"test_auto_compaction_queue","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.7,"source_file":"pi/packages/coding-agent/test/file-mutation-queue.test.ts","weight":0.6},
+    {"source":"exif-orientation_getExifOrientation","target":"mime_detectSupportedImageMimeType","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.78,"source_file":"pi/packages/coding-agent/src/utils/exif-orientation.ts","weight":0.7},
+
+    {"source":"test_auth_storage","target":"test_utilities","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/test/utilities.ts","weight":0.8},
+    {"source":"test_auto_compaction_queue","target":"core_AgentSession","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/test/agent-session-auto-compaction-queue.test.ts","weight":0.7},
+    {"source":"test_agent_session_concurrent","target":"core_AgentSession","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/test/agent-session-concurrent.test.ts","weight":0.7},
+    {"source":"test_file_mutation_queue","target":"core_edit_tool","relation":"rationale_for","confidence":"INFERRED","confidence_score":0.82,"source_file":"pi/packages/coding-agent/test/file-mutation-queue.test.ts","weight":0.7}
+  ],
+  "hyperedges": [
+    {"id":"he_file_image_pipeline","nodes":["mime_detectSupportedImageMimeType","exif-orientation_applyExifOrientation","mime_detectSupportedImageMimeTypeFromFile"],"relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/src/utils/mime.ts"},
+    {"id":"he_session_test_stack","nodes":["core_AgentSession","core_SessionManager","core_AuthStorage","test_utilities"],"relation":"shares_data_with","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/utilities.ts"},
+    {"id":"he_git_url_parse","nodes":["git_parseGitUrl","git_splitRef","git_buildGitSource","git_parseGenericGitUrl"],"relation":"conceptually_related_to","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/src/utils/git.ts"}
+  ]
+}

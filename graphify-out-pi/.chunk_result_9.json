@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {"id": "validation_test_validationtest", "label": "validateToolArguments test", "file_type": "code", "source_file": "pi/packages/ai/test/validation.test.ts", "source_location": null},
+    {"id": "validation_validateToolArguments", "label": "validateToolArguments (validation util)", "file_type": "code", "source_file": "pi/packages/ai/src/utils/validation.ts", "source_location": null},
+    {"id": "openai_responses_cache_affinity_e2e_test", "label": "openai responses cache affinity e2e test", "file_type": "code", "source_file": "pi/packages/ai/test/openai-responses-cache-affinity-e2e.test.ts", "source_location": null},
+    {"id": "context_overflow_test", "label": "Context overflow e2e test", "file_type": "code", "source_file": "pi/packages/ai/test/context-overflow.test.ts", "source_location": null},
+    {"id": "overflow_isContextOverflow", "label": "isContextOverflow (overflow detector)", "file_type": "code", "source_file": "pi/packages/ai/src/utils/overflow.ts", "source_location": null},
+    {"id": "stream_complete", "label": "complete (LLM stream entry)", "file_type": "code", "source_file": "pi/packages/ai/src/stream.ts", "source_location": null},
+    {"id": "models_getModel", "label": "getModel / getModels (model registry)", "file_type": "code", "source_file": "pi/packages/ai/src/models.ts", "source_location": null},
+    {"id": "red_circle_png", "label": "red-circle.png (vision test fixture)", "file_type": "image", "source_file": "pi/packages/ai/test/data/red-circle.png", "source_location": null},
+    {"id": "codingagent_vitest_config", "label": "coding-agent vitest.config.ts", "file_type": "code", "source_file": "pi/packages/coding-agent/vitest.config.ts", "source_location": null},
+    {"id": "codingagent_changelog", "label": "coding-agent CHANGELOG", "file_type": "document", "source_file": "pi/packages/coding-agent/CHANGELOG.md", "source_location": null},
+    {"id": "codingagent_readme", "label": "coding-agent README", "file_type": "document", "source_file": "pi/packages/coding-agent/README.md", "source_location": null},
+    {"id": "doc_tui", "label": "TUI Components doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/tui.md", "source_location": null},
+    {"id": "doc_settings", "label": "Settings doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/settings.md", "source_location": null},
+    {"id": "doc_compaction", "label": "Compaction & Branch Summarization doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/compaction.md", "source_location": null},
+    {"id": "doc_providers", "label": "Providers doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/providers.md", "source_location": null},
+    {"id": "doc_extensions", "label": "Extensions doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/extensions.md", "source_location": null},
+    {"id": "doc_terminal_setup", "label": "Terminal Setup doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/terminal-setup.md", "source_location": null},
+    {"id": "doc_prompt_templates", "label": "Prompt Templates doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/prompt-templates.md", "source_location": null},
+    {"id": "doc_shell_aliases", "label": "Shell Aliases doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/shell-aliases.md", "source_location": null},
+    {"id": "doc_rpc", "label": "RPC Mode doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/rpc.md", "source_location": null},
+    {"id": "doc_usage", "label": "Using Pi doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/usage.md", "source_location": null},
+    {"id": "doc_json", "label": "JSON Event Stream doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/json.md", "source_location": null},
+    {"id": "doc_quickstart", "label": "Quickstart doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/quickstart.md", "source_location": null},
+    {"id": "doc_windows", "label": "Windows Setup doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/windows.md", "source_location": null},
+    {"id": "doc_sdk", "label": "SDK doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/sdk.md", "source_location": null},
+    {"id": "doc_termux", "label": "Termux Setup doc", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/termux.md", "source_location": null},
+
+    {"id": "concept_compaction", "label": "Compaction (auto context summarization)", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/compaction.md", "source_location": null},
+    {"id": "concept_branch_summarization", "label": "Branch Summarization", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/compaction.md", "source_location": null},
+    {"id": "concept_project_trust", "label": "Project Trust", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/settings.md", "source_location": null},
+    {"id": "concept_extension", "label": "Extension system", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/extensions.md", "source_location": null},
+    {"id": "concept_tui_component", "label": "TUI Component", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/tui.md", "source_location": null},
+    {"id": "concept_session_tree", "label": "Session tree (JSONL branching)", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/compaction.md", "source_location": null},
+    {"id": "concept_provider", "label": "LLM Provider (OAuth + API key)", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/providers.md", "source_location": null},
+    {"id": "concept_context_overflow", "label": "Context overflow handling", "file_type": "code", "source_file": "pi/packages/ai/test/context-overflow.test.ts", "source_location": null},
+    {"id": "concept_rpc_protocol", "label": "RPC JSONL protocol", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/rpc.md", "source_location": null},
+    {"id": "concept_json_events", "label": "JSON event stream mode", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/json.md", "source_location": null},
+    {"id": "concept_sdk", "label": "createAgentSession SDK", "file_type": "document", "source_file": "pi/packages/coding-agent/docs/sdk.md", "source_location": null},
+    {"id": "concept_tool_validation", "label": "AJV-compatible tool arg coercion", "file_type": "code", "source_file": "pi/packages/ai/test/validation.test.ts", "source_location": null},
+
+    {"id": "changelog_contextwindow_fix", "label": "Changelog: OpenAI/Codex context-window metadata fix (272k)", "file_type": "document", "source_file": "pi/packages/coding-agent/CHANGELOG.md", "source_location": null},
+    {"id": "changelog_overflow_detection_fix", "label": "Changelog: parenthesized max context length overflow detection", "file_type": "document", "source_file": "pi/packages/coding-agent/CHANGELOG.md", "source_location": null}
+  ],
+  "edges": [
+    {"source": "validation_test_validationtest", "target": "validation_validateToolArguments", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/validation.test.ts", "weight": 1.0},
+    {"source": "validation_test_validationtest", "target": "concept_tool_validation", "relation": "rationale_for", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/ai/test/validation.test.ts", "weight": 1.0},
+
+    {"source": "openai_responses_cache_affinity_e2e_test", "target": "stream_complete", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-responses-cache-affinity-e2e.test.ts", "weight": 1.0},
+    {"source": "openai_responses_cache_affinity_e2e_test", "target": "models_getModel", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/openai-responses-cache-affinity-e2e.test.ts", "weight": 1.0},
+
+    {"source": "context_overflow_test", "target": "overflow_isContextOverflow", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/context-overflow.test.ts", "weight": 1.0},
+    {"source": "context_overflow_test", "target": "stream_complete", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/context-overflow.test.ts", "weight": 1.0},
+    {"source": "context_overflow_test", "target": "models_getModel", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/context-overflow.test.ts", "weight": 1.0},
+    {"source": "context_overflow_test", "target": "concept_context_overflow", "relation": "rationale_for", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/ai/test/context-overflow.test.ts", "weight": 1.0},
+    {"source": "overflow_isContextOverflow", "target": "concept_context_overflow", "relation": "implements", "confidence": "INFERRED", "confidence_score": 0.95, "source_file": "pi/packages/ai/src/utils/overflow.ts", "weight": 1.0},
+    {"source": "concept_context_overflow", "target": "changelog_overflow_detection_fix", "relation": "rationale_for", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/CHANGELOG.md", "weight": 1.0},
+
+    {"source": "codingagent_vitest_config", "target": "models_getModel", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/vitest.config.ts", "weight": 1.0},
+
+    {"source": "red_circle_png", "target": "concept_context_overflow", "relation": "shares_data_with", "confidence": "AMBIGUOUS", "confidence_score": 0.2, "source_file": "pi/packages/ai/test/data/red-circle.png", "weight": 1.0},
+
+    {"source": "doc_compaction", "target": "concept_compaction", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/compaction.md", "weight": 1.0},
+    {"source": "doc_compaction", "target": "concept_branch_summarization", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/compaction.md", "weight": 1.0},
+    {"source": "doc_compaction", "target": "concept_session_tree", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/compaction.md", "weight": 1.0},
+    {"source": "doc_compaction", "target": "doc_extensions", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/compaction.md", "weight": 1.0},
+
+    {"source": "doc_settings", "target": "concept_project_trust", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/settings.md", "weight": 1.0},
+    {"source": "doc_settings", "target": "concept_compaction", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/settings.md", "weight": 1.0},
+    {"source": "doc_settings", "target": "doc_compaction", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/docs/settings.md", "weight": 1.0},
+
+    {"source": "doc_providers", "target": "concept_provider", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/providers.md", "weight": 1.0},
+    {"source": "doc_providers", "target": "doc_settings", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/docs/providers.md", "weight": 1.0},
+
+    {"source": "doc_extensions", "target": "concept_extension", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/extensions.md", "weight": 1.0},
+    {"source": "doc_extensions", "target": "doc_tui", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/extensions.md", "weight": 1.0},
+    {"source": "doc_extensions", "target": "doc_compaction", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/extensions.md", "weight": 1.0},
+    {"source": "doc_extensions", "target": "concept_project_trust", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/extensions.md", "weight": 1.0},
+    {"source": "doc_extensions", "target": "doc_rpc", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/docs/extensions.md", "weight": 1.0},
+
+    {"source": "doc_tui", "target": "concept_tui_component", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/tui.md", "weight": 1.0},
+    {"source": "doc_tui", "target": "doc_terminal_setup", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/docs/tui.md", "weight": 1.0},
+
+    {"source": "doc_rpc", "target": "concept_rpc_protocol", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/rpc.md", "weight": 1.0},
+    {"source": "doc_rpc", "target": "doc_sdk", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/docs/rpc.md", "weight": 1.0},
+    {"source": "doc_json", "target": "concept_json_events", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/json.md", "weight": 1.0},
+    {"source": "doc_json", "target": "doc_rpc", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/docs/json.md", "weight": 1.0},
+
+    {"source": "doc_sdk", "target": "concept_sdk", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/sdk.md", "weight": 1.0},
+    {"source": "doc_sdk", "target": "doc_extensions", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/sdk.md", "weight": 1.0},
+    {"source": "doc_sdk", "target": "doc_rpc", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/sdk.md", "weight": 1.0},
+
+    {"source": "doc_usage", "target": "doc_quickstart", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/docs/usage.md", "weight": 1.0},
+    {"source": "doc_usage", "target": "doc_compaction", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/usage.md", "weight": 1.0},
+    {"source": "doc_usage", "target": "doc_terminal_setup", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/usage.md", "weight": 1.0},
+    {"source": "doc_usage", "target": "doc_settings", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/usage.md", "weight": 1.0},
+
+    {"source": "doc_quickstart", "target": "doc_providers", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/quickstart.md", "weight": 1.0},
+    {"source": "doc_quickstart", "target": "doc_settings", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/quickstart.md", "weight": 1.0},
+    {"source": "doc_quickstart", "target": "doc_usage", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/quickstart.md", "weight": 1.0},
+    {"source": "doc_quickstart", "target": "doc_windows", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/quickstart.md", "weight": 1.0},
+    {"source": "doc_quickstart", "target": "doc_termux", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/quickstart.md", "weight": 1.0},
+
+    {"source": "codingagent_readme", "target": "doc_providers", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_settings", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_compaction", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_sdk", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_rpc", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_json", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "concept_extension", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_extensions", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_terminal_setup", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+    {"source": "codingagent_readme", "target": "doc_shell_aliases", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/README.md", "weight": 1.0},
+
+    {"source": "doc_terminal_setup", "target": "doc_settings", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/terminal-setup.md", "weight": 1.0},
+    {"source": "doc_shell_aliases", "target": "doc_settings", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/shell-aliases.md", "weight": 1.0},
+    {"source": "doc_prompt_templates", "target": "concept_extension", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/docs/prompt-templates.md", "weight": 1.0},
+    {"source": "doc_prompt_templates", "target": "doc_settings", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/prompt-templates.md", "weight": 1.0},
+
+    {"source": "doc_windows", "target": "doc_settings", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/docs/windows.md", "weight": 1.0},
+    {"source": "doc_termux", "target": "doc_providers", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "pi/packages/coding-agent/docs/termux.md", "weight": 1.0},
+
+    {"source": "codingagent_changelog", "target": "concept_context_overflow", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/CHANGELOG.md", "weight": 1.0},
+    {"source": "codingagent_changelog", "target": "concept_compaction", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/CHANGELOG.md", "weight": 1.0},
+    {"source": "codingagent_changelog", "target": "changelog_contextwindow_fix", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/CHANGELOG.md", "weight": 1.0},
+    {"source": "changelog_contextwindow_fix", "target": "concept_context_overflow", "relation": "rationale_for", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/CHANGELOG.md", "weight": 1.0},
+
+    {"source": "concept_rpc_protocol", "target": "concept_json_events", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/docs/rpc.md", "weight": 1.0},
+    {"source": "concept_sdk", "target": "concept_rpc_protocol", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/docs/sdk.md", "weight": 1.0}
+  ],
+  "hyperedges": [
+    {"id": "he_context_overflow_validation", "nodes": ["context_overflow_test", "overflow_isContextOverflow", "stream_complete", "models_getModel", "concept_context_overflow"], "relation": "collaborates_on", "source_file": "pi/packages/ai/test/context-overflow.test.ts", "confidence": "EXTRACTED", "confidence_score": 1.0},
+    {"id": "he_pi_modes", "nodes": ["concept_rpc_protocol", "concept_json_events", "concept_sdk", "codingagent_readme"], "relation": "documents_same_system", "source_file": "pi/packages/coding-agent/README.md", "confidence": "INFERRED", "confidence_score": 0.85},
+    {"id": "he_extension_customization", "nodes": ["concept_extension", "doc_extensions", "doc_tui", "doc_compaction", "doc_prompt_templates"], "relation": "customization_surface_area", "source_file": "pi/packages/coding-agent/docs/extensions.md", "confidence": "INFERRED", "confidence_score": 0.85}
+  ]
+}

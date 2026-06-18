@@ -1,0 +1,1 @@
+{"nodes": [{"id": "truncatedtool_rgTool", "label": "rg tool (ripgrep wrapper with truncation)", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/truncated-tool.ts", "source_location": null}], "edges": [], "hyperedges": []}

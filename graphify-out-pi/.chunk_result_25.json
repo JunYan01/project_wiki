@@ -1,0 +1,199 @@
+{
+  "nodes": [
+    {"id": "extensions-runner-test_testfile", "label": "ExtensionRunner Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "source_location": null},
+    {"id": "extensions-runner_runner", "label": "ExtensionRunner", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/extensions/runner.ts", "source_location": null},
+    {"id": "extensions-loader_loader", "label": "Extension Loader (discoverAndLoadExtensions/loadExtensions)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/extensions/loader.ts", "source_location": null},
+    {"id": "extensions-types", "label": "Extension Types (ExtensionActions/ExtensionContextActions/ProviderConfig)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/extensions/types.ts", "source_location": null},
+    {"id": "keybindings-manager", "label": "KeybindingsManager", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/keybindings.ts", "source_location": null},
+    {"id": "model-registry", "label": "ModelRegistry", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/model-registry.ts", "source_location": null},
+    {"id": "session-manager", "label": "SessionManager", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/session-manager.ts", "source_location": null},
+    {"id": "auth-storage", "label": "AuthStorage", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/auth-storage.ts", "source_location": null},
+
+    {"id": "agent-session-retry_test", "label": "AgentSession Retry Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "source_location": null},
+    {"id": "agent-session", "label": "AgentSession", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/agent-session.ts", "source_location": null},
+    {"id": "settings-manager", "label": "SettingsManager", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/settings-manager.ts", "source_location": null},
+    {"id": "agent-core-Agent", "label": "Agent (pi-agent-core)", "file_type": "code", "source_file": "@earendil-works/pi-agent-core", "source_location": null},
+
+    {"id": "interactive-mode-startup-input_test", "label": "InteractiveMode Startup Input Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/interactive-mode-startup-input.test.ts", "source_location": null},
+    {"id": "interactive-mode", "label": "InteractiveMode", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/interactive/interactive-mode.ts", "source_location": null},
+
+    {"id": "edit-tool-legacy-input_test", "label": "Edit Tool Legacy Input Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/edit-tool-legacy-input.test.ts", "source_location": null},
+    {"id": "edit-tool", "label": "Edit Tool Definition (createEditToolDefinition)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/tools/edit.ts", "source_location": null},
+
+    {"id": "agent-session-runtime-events_test", "label": "AgentSessionRuntime Lifecycle Events Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/agent-session-runtime-events.test.ts", "source_location": null},
+    {"id": "agent-session-runtime", "label": "AgentSession Runtime (createAgentSessionRuntime/Services/FromServices)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/agent-session-runtime.ts", "source_location": null},
+
+    {"id": "image-resize-callers_test", "label": "Image Resize Callers Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/image-resize-callers.test.ts", "source_location": null},
+    {"id": "image-resize", "label": "image-resize (resizeImage/formatDimensionNote)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/image-resize.ts", "source_location": null},
+    {"id": "read-tool", "label": "Read Tool (createReadTool)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/tools/read.ts", "source_location": null},
+    {"id": "file-processor", "label": "File Processor (processFileArguments)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/cli/file-processor.ts", "source_location": null},
+
+    {"id": "agent-session-branching_test", "label": "AgentSession Forking/Branching Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/agent-session-branching.test.ts", "source_location": null},
+
+    {"id": "compaction_test", "label": "Compaction Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/compaction.test.ts", "source_location": null},
+    {"id": "compaction-index", "label": "Compaction Module (calculateContextTokens/compact/findCutPoint/prepareCompaction/shouldCompact)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/compaction/index.ts", "source_location": null},
+
+    {"id": "syntax-highlight_test", "label": "Syntax Highlight Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/syntax-highlight.test.ts", "source_location": null},
+    {"id": "syntax-highlight", "label": "Syntax Highlight (highlight/renderHighlightedHtml/supportsLanguage)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/syntax-highlight.ts", "source_location": null},
+    {"id": "theme", "label": "Theme (highlightCode/initTheme)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/interactive/theme/theme.ts", "source_location": null},
+
+    {"id": "clipboard-image_test", "label": "Clipboard Image Tests (readClipboardImage)", "file_type": "code", "source_file": "pi/packages/coding-agent/test/clipboard-image.test.ts", "source_location": null},
+    {"id": "clipboard-image", "label": "clipboard-image (readClipboardImage)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/clipboard-image.ts", "source_location": null},
+    {"id": "clipboard-native", "label": "clipboard-native (clipboard hasImage/getImageBinary/setText)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/clipboard-native.ts", "source_location": null},
+
+    {"id": "plan-mode-utils_test", "label": "Plan Mode Utils Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/plan-mode-utils.test.ts", "source_location": null},
+    {"id": "plan-mode-utils", "label": "Plan Mode Utils (isSafeCommand/extractTodoItems/extractDoneSteps/markCompletedSteps)", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/plan-mode/utils.ts", "source_location": null},
+
+    {"id": "extensions-input-event_test", "label": "Extension Input Event Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/extensions-input-event.test.ts", "source_location": null},
+
+    {"id": "clipboard_test", "label": "Clipboard Tests (copyToClipboard)", "file_type": "code", "source_file": "pi/packages/coding-agent/test/clipboard.test.ts", "source_location": null},
+    {"id": "clipboard", "label": "clipboard (copyToClipboard)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/clipboard.ts", "source_location": null},
+
+    {"id": "git-ssh-url_test", "label": "Git SSH URL Parsing Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/git-ssh-url.test.ts", "source_location": null},
+    {"id": "git-util", "label": "Git Util (parseGitUrl)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/git.ts", "source_location": null},
+
+    {"id": "trust-selector_test", "label": "TrustSelectorComponent Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/trust-selector.test.ts", "source_location": null},
+    {"id": "trust-selector", "label": "TrustSelectorComponent", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/interactive/components/trust-selector.ts", "source_location": null},
+    {"id": "ansi-util", "label": "ANSI Util (stripAnsi)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/utils/ansi.ts", "source_location": null},
+
+    {"id": "rpc-client-clone_test", "label": "RpcClient Clone Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/rpc-client-clone.test.ts", "source_location": null},
+    {"id": "rpc-client", "label": "RpcClient", "file_type": "code", "source_file": "pi/packages/coding-agent/src/modes/rpc/rpc-client.ts", "source_location": null},
+
+    {"id": "trust-manager_test", "label": "ProjectTrustStore Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/trust-manager.test.ts", "source_location": null},
+    {"id": "trust-manager", "label": "Trust Manager (ProjectTrustStore/hasTrustRequiringProjectResources)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/trust-manager.ts", "source_location": null},
+
+    {"id": "package-manager_test", "label": "DefaultPackageManager Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/package-manager.test.ts", "source_location": null},
+    {"id": "package-manager", "label": "DefaultPackageManager", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/package-manager.ts", "source_location": null},
+
+    {"id": "args_test", "label": "parseArgs Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/args.test.ts", "source_location": null},
+    {"id": "args-cli", "label": "CLI Args (parseArgs)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/cli/args.ts", "source_location": null},
+
+    {"id": "model-registry_test", "label": "ModelRegistry Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/model-registry.test.ts", "source_location": null},
+
+    {"id": "http-dispatcher_test", "label": "HTTP Dispatcher Proxy Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/http-dispatcher.test.ts", "source_location": null},
+    {"id": "http-dispatcher", "label": "HTTP Dispatcher (applyHttpProxySettings)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/core/http-dispatcher.ts", "source_location": null},
+
+    {"id": "first-time-setup_test", "label": "First Time Setup Tests", "file_type": "code", "source_file": "pi/packages/coding-agent/test/first-time-setup.test.ts", "source_location": null},
+    {"id": "startup-ui", "label": "Startup UI (shouldRunFirstTimeSetup)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/cli/startup-ui.ts", "source_location": null},
+    {"id": "config", "label": "Config (ENV_AGENT_DIR)", "file_type": "code", "source_file": "pi/packages/coding-agent/src/config.ts", "source_location": null},
+
+    {"id": "concept-project-trust", "label": "Project Trust Concept", "file_type": "document", "source_file": "pi/packages/coding-agent/src/core/trust-manager.ts", "source_location": null},
+    {"id": "concept-session-lifecycle", "label": "Session Lifecycle (fork/switch/shutdown/start)", "file_type": "document", "source_file": "pi/packages/coding-agent/src/core/agent-session-runtime.ts", "source_location": null},
+    {"id": "concept-extension-events", "label": "Extension Event System (input/tool_result/before_agent_start)", "file_type": "document", "source_file": "pi/packages/coding-agent/src/core/extensions/runner.ts", "source_location": null},
+    {"id": "concept-compaction", "label": "Context Compaction Concept", "file_type": "document", "source_file": "pi/packages/coding-agent/src/core/compaction/index.ts", "source_location": null},
+    {"id": "concept-package-resolution", "label": "Package Source Resolution & Filtering Concept", "file_type": "document", "source_file": "pi/packages/coding-agent/src/core/package-manager.ts", "source_location": null},
+    {"id": "concept-clipboard-fallback", "label": "Clipboard Fallback Chain (native -> shell -> OSC52)", "file_type": "document", "source_file": "pi/packages/coding-agent/src/utils/clipboard.ts", "source_location": null}
+  ],
+  "edges": [
+    {"source": "extensions-runner-test_testfile", "target": "extensions-runner_runner", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner-test_testfile", "target": "extensions-loader_loader", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner-test_testfile", "target": "extensions-types", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner-test_testfile", "target": "keybindings-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner-test_testfile", "target": "model-registry", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner-test_testfile", "target": "session-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner-test_testfile", "target": "auth-storage", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner-test_testfile", "target": "concept-extension-events", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+    {"source": "extensions-runner_runner", "target": "model-registry", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts", "weight": 1.0},
+
+    {"source": "agent-session-retry_test", "target": "agent-session", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+    {"source": "agent-session-retry_test", "target": "agent-core-Agent", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+    {"source": "agent-session-retry_test", "target": "settings-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+    {"source": "agent-session-retry_test", "target": "model-registry", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+    {"source": "agent-session-retry_test", "target": "session-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+    {"source": "agent-session-retry_test", "target": "auth-storage", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+
+    {"source": "interactive-mode-startup-input_test", "target": "interactive-mode", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/interactive-mode-startup-input.test.ts", "weight": 1.0},
+
+    {"source": "edit-tool-legacy-input_test", "target": "edit-tool", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/edit-tool-legacy-input.test.ts", "weight": 1.0},
+    {"source": "edit-tool-legacy-input_test", "target": "extensions-types", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/edit-tool-legacy-input.test.ts", "weight": 1.0},
+
+    {"source": "agent-session-runtime-events_test", "target": "agent-session-runtime", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-runtime-events.test.ts", "weight": 1.0},
+    {"source": "agent-session-runtime-events_test", "target": "auth-storage", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-runtime-events.test.ts", "weight": 1.0},
+    {"source": "agent-session-runtime-events_test", "target": "session-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-runtime-events.test.ts", "weight": 1.0},
+    {"source": "agent-session-runtime-events_test", "target": "concept-session-lifecycle", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/agent-session-runtime-events.test.ts", "weight": 1.0},
+
+    {"source": "image-resize-callers_test", "target": "image-resize", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/image-resize-callers.test.ts", "weight": 1.0},
+    {"source": "image-resize-callers_test", "target": "read-tool", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/image-resize-callers.test.ts", "weight": 1.0},
+    {"source": "image-resize-callers_test", "target": "file-processor", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/image-resize-callers.test.ts", "weight": 1.0},
+    {"source": "read-tool", "target": "image-resize", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/image-resize-callers.test.ts", "weight": 1.0},
+    {"source": "file-processor", "target": "image-resize", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/image-resize-callers.test.ts", "weight": 1.0},
+
+    {"source": "agent-session-branching_test", "target": "agent-session", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-branching.test.ts", "weight": 1.0},
+    {"source": "agent-session-branching_test", "target": "agent-session-runtime", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-branching.test.ts", "weight": 1.0},
+    {"source": "agent-session-branching_test", "target": "auth-storage", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-branching.test.ts", "weight": 1.0},
+    {"source": "agent-session-branching_test", "target": "session-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/agent-session-branching.test.ts", "weight": 1.0},
+    {"source": "agent-session-branching_test", "target": "concept-session-lifecycle", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/agent-session-branching.test.ts", "weight": 1.0},
+    {"source": "agent-session-retry_test", "target": "agent-session-branching_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.75, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+
+    {"source": "compaction_test", "target": "compaction-index", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/compaction.test.ts", "weight": 1.0},
+    {"source": "compaction_test", "target": "session-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/compaction.test.ts", "weight": 1.0},
+    {"source": "compaction_test", "target": "concept-compaction", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/compaction.test.ts", "weight": 1.0},
+    {"source": "compaction-index", "target": "session-manager", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/test/compaction.test.ts", "weight": 1.0},
+
+    {"source": "syntax-highlight_test", "target": "syntax-highlight", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/syntax-highlight.test.ts", "weight": 1.0},
+    {"source": "syntax-highlight_test", "target": "theme", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/syntax-highlight.test.ts", "weight": 1.0},
+    {"source": "theme", "target": "syntax-highlight", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/syntax-highlight.test.ts", "weight": 1.0},
+
+    {"source": "clipboard-image_test", "target": "clipboard-image", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/clipboard-image.test.ts", "weight": 1.0},
+    {"source": "clipboard-image_test", "target": "clipboard-native", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/clipboard-image.test.ts", "weight": 1.0},
+    {"source": "clipboard-image", "target": "clipboard-native", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/clipboard-image.test.ts", "weight": 1.0},
+
+    {"source": "plan-mode-utils_test", "target": "plan-mode-utils", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/plan-mode-utils.test.ts", "weight": 1.0},
+
+    {"source": "extensions-input-event_test", "target": "extensions-runner_runner", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-input-event.test.ts", "weight": 1.0},
+    {"source": "extensions-input-event_test", "target": "extensions-loader_loader", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-input-event.test.ts", "weight": 1.0},
+    {"source": "extensions-input-event_test", "target": "model-registry", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-input-event.test.ts", "weight": 1.0},
+    {"source": "extensions-input-event_test", "target": "session-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-input-event.test.ts", "weight": 1.0},
+    {"source": "extensions-input-event_test", "target": "auth-storage", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/extensions-input-event.test.ts", "weight": 1.0},
+    {"source": "extensions-input-event_test", "target": "extensions-runner-test_testfile", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/test/extensions-input-event.test.ts", "weight": 1.0},
+
+    {"source": "clipboard_test", "target": "clipboard", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/clipboard.test.ts", "weight": 1.0},
+    {"source": "clipboard_test", "target": "clipboard-native", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/clipboard.test.ts", "weight": 1.0},
+    {"source": "clipboard_test", "target": "clipboard-image", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/clipboard.test.ts", "weight": 1.0},
+    {"source": "clipboard", "target": "clipboard-native", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/clipboard.test.ts", "weight": 1.0},
+    {"source": "clipboard", "target": "clipboard-image", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/clipboard.test.ts", "weight": 1.0},
+    {"source": "clipboard", "target": "concept-clipboard-fallback", "relation": "implements", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/clipboard.test.ts", "weight": 1.0},
+
+    {"source": "git-ssh-url_test", "target": "git-util", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/git-ssh-url.test.ts", "weight": 1.0},
+    {"source": "git-util", "target": "package-manager", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/test/git-ssh-url.test.ts", "weight": 1.0},
+
+    {"source": "trust-selector_test", "target": "trust-selector", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/trust-selector.test.ts", "weight": 1.0},
+    {"source": "trust-selector_test", "target": "keybindings-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/trust-selector.test.ts", "weight": 1.0},
+    {"source": "trust-selector_test", "target": "theme", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/trust-selector.test.ts", "weight": 1.0},
+    {"source": "trust-selector_test", "target": "ansi-util", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/trust-selector.test.ts", "weight": 1.0},
+    {"source": "trust-selector", "target": "concept-project-trust", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/trust-selector.test.ts", "weight": 1.0},
+
+    {"source": "rpc-client-clone_test", "target": "rpc-client", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/rpc-client-clone.test.ts", "weight": 1.0},
+
+    {"source": "trust-manager_test", "target": "trust-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/trust-manager.test.ts", "weight": 1.0},
+    {"source": "trust-manager_test", "target": "concept-project-trust", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/trust-manager.test.ts", "weight": 1.0},
+    {"source": "trust-selector_test", "target": "trust-manager_test", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/trust-manager.test.ts", "weight": 1.0},
+    {"source": "trust-selector", "target": "trust-manager", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.75, "source_file": "pi/packages/coding-agent/test/trust-selector.test.ts", "weight": 1.0},
+
+    {"source": "package-manager_test", "target": "package-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/package-manager.test.ts", "weight": 1.0},
+    {"source": "package-manager_test", "target": "settings-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/package-manager.test.ts", "weight": 1.0},
+    {"source": "package-manager_test", "target": "git-util", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/test/package-manager.test.ts", "weight": 1.0},
+    {"source": "package-manager_test", "target": "concept-package-resolution", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "pi/packages/coding-agent/test/package-manager.test.ts", "weight": 1.0},
+
+    {"source": "args_test", "target": "args-cli", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/args.test.ts", "weight": 1.0},
+
+    {"source": "model-registry_test", "target": "model-registry", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/model-registry.test.ts", "weight": 1.0},
+    {"source": "model-registry_test", "target": "auth-storage", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/model-registry.test.ts", "weight": 1.0},
+
+    {"source": "http-dispatcher_test", "target": "http-dispatcher", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/http-dispatcher.test.ts", "weight": 1.0},
+
+    {"source": "first-time-setup_test", "target": "startup-ui", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/first-time-setup.test.ts", "weight": 1.0},
+    {"source": "first-time-setup_test", "target": "config", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/first-time-setup.test.ts", "weight": 1.0},
+    {"source": "first-time-setup_test", "target": "settings-manager", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/test/first-time-setup.test.ts", "weight": 1.0},
+    {"source": "first-time-setup_test", "target": "concept-project-trust", "relation": "references", "confidence": "AMBIGUOUS", "confidence_score": 0.3, "source_file": "pi/packages/coding-agent/test/first-time-setup.test.ts", "weight": 1.0},
+
+    {"source": "agent-session-retry_test", "target": "settings-manager", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts", "weight": 1.0},
+    {"source": "compaction_test", "target": "concept-session-lifecycle", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "pi/packages/coding-agent/test/compaction.test.ts", "weight": 1.0},
+    {"source": "plan-mode-utils", "target": "concept-extension-events", "relation": "conceptually_related_to", "confidence": "AMBIGUOUS", "confidence_score": 0.3, "source_file": "pi/packages/coding-agent/test/plan-mode-utils.test.ts", "weight": 1.0}
+  ],
+  "hyperedges": [
+    {"id": "he_session_core_deps", "nodes": ["agent-session", "session-manager", "auth-storage", "model-registry", "settings-manager"], "relation": "AgentSession core dependency cluster", "source_file": "pi/packages/coding-agent/test/agent-session-retry.test.ts"},
+    {"id": "he_extension_runner_pipeline", "nodes": ["extensions-loader_loader", "extensions-runner_runner", "model-registry", "session-manager", "extensions-types"], "relation": "Extension load + run pipeline", "source_file": "pi/packages/coding-agent/test/extensions-runner.test.ts"},
+    {"id": "he_clipboard_fallback_chain", "nodes": ["clipboard", "clipboard-native", "clipboard-image", "concept-clipboard-fallback"], "relation": "Clipboard copy/read fallback chain", "source_file": "pi/packages/coding-agent/test/clipboard.test.ts"}
+  ]
+}

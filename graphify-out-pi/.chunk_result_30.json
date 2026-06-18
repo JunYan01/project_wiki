@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {"id":"3592_test","label":"#3592 no-builtin-tools keeps extension tools","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3592-no-builtin-tools-keeps-extension-tools.test.ts","source_location":null},
+    {"id":"2860_test","label":"#2860 replaced session context","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/2860-replaced-session-context.test.ts","source_location":null},
+    {"id":"5109_test","label":"#5109 exclude tools","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts","source_location":null},
+    {"id":"5080_test","label":"#5080 signal shutdown extension cleanup","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts","source_location":null},
+    {"id":"2023_test","label":"#2023 queued slash-command followup","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/2023-queued-slash-command-followup.test.ts","source_location":null},
+    {"id":"1717_2113_test","label":"#1717/#2113 agent session event settlement","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/1717-2113-agent-session-event-settlement.test.ts","source_location":null},
+    {"id":"5724_test","label":"#5724 sigterm signal-exit","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts","source_location":null},
+    {"id":"3686_test","label":"#3686 session name event","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3686-session-name-event.test.ts","source_location":null},
+    {"id":"3982_test","label":"#3982 message_end cost override","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts","source_location":null},
+    {"id":"2753_test","label":"#2753 reload stale resource settings","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/2753-reload-stale-resource-settings.test.ts","source_location":null},
+    {"id":"3302_test","label":"#3302 find path glob","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3302-find-path-glob.test.ts","source_location":null},
+    {"id":"2835_test","label":"#2835 tools allowlist filters extension tools","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/2835-tools-allowlist-filters-extension-tools.test.ts","source_location":null},
+    {"id":"5303_test","label":"#5303 bash output truncation","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/5303-bash-output-truncation.test.ts","source_location":null},
+    {"id":"2781_test","label":"#2781 skill collision precedence","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/2781-skill-collision-precedence.test.ts","source_location":null},
+    {"id":"5661_test","label":"#5661 uppercase header values","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts","source_location":null},
+    {"id":"5208_test","label":"#5208 late bash output","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/5208-late-bash-output.test.ts","source_location":null},
+    {"id":"3688_test","label":"#3688 tree cancel compacting","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3688-tree-cancel-compacting.test.ts","source_location":null},
+    {"id":"2791_test","label":"#2791 fswatch error crash","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/2791-fswatch-error-crash.test.ts","source_location":null},
+    {"id":"3217_test","label":"#3217 scoped model order","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3217-scoped-model-order.test.ts","source_location":null},
+    {"id":"5596_test","label":"#5596 missing theme export","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/5596-missing-theme-export.test.ts","source_location":null},
+    {"id":"3303_test","label":"#3303 find nested gitignore","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3303-find-nested-gitignore.test.ts","source_location":null},
+    {"id":"3616_test","label":"#3616 settings inmemory reload","file_type":"code","source_file":"pi/packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts","source_location":null},
+    {"id":"concept_tool_filtering","label":"Tool allowlist/exclusion/noTools filtering","file_type":"document","source_file":"pi/packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts","source_location":null},
+    {"id":"concept_shutdown_ordering","label":"Signal-triggered shutdown ordering (dispose before tty)","file_type":"document","source_file":"pi/packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts","source_location":null},
+    {"id":"concept_session_replacement","label":"Session replacement withSession callback","file_type":"document","source_file":"pi/packages/coding-agent/test/suite/regressions/2860-replaced-session-context.test.ts","source_location":null},
+    {"id":"concept_message_end_hooks","label":"message_end handler settlement/override","file_type":"document","source_file":"pi/packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts","source_location":null},
+    {"id":"concept_skill_precedence","label":"Skill precedence: project > user > package","file_type":"document","source_file":"pi/packages/coding-agent/test/suite/regressions/2781-skill-collision-precedence.test.ts","source_location":null},
+    {"id":"concept_fd_fullpath","label":"fd full-path glob matching","file_type":"document","source_file":"pi/packages/coding-agent/test/suite/regressions/3302-find-path-glob.test.ts","source_location":null}
+  ],
+  "edges": [
+    {"source":"3592_test","target":"concept_tool_filtering","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/3592-no-builtin-tools-keeps-extension-tools.test.ts","weight":1.0},
+    {"source":"5109_test","target":"concept_tool_filtering","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts","weight":1.0},
+    {"source":"2835_test","target":"concept_tool_filtering","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/2835-tools-allowlist-filters-extension-tools.test.ts","weight":1.0},
+    {"source":"5109_test","target":"2835_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts","weight":1.0},
+    {"source":"5109_test","target":"3592_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts","weight":1.0},
+    {"source":"3592_test","target":"2835_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/test/suite/regressions/3592-no-builtin-tools-keeps-extension-tools.test.ts","weight":1.0},
+    {"source":"3592_test","target":"2835_test","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/3592-no-builtin-tools-keeps-extension-tools.test.ts","weight":1.0},
+    {"source":"5109_test","target":"concept_tool_filtering","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts","weight":1.0},
+
+    {"source":"5080_test","target":"concept_shutdown_ordering","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts","weight":1.0},
+    {"source":"5724_test","target":"concept_shutdown_ordering","relation":"references","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts","weight":1.0},
+    {"source":"5724_test","target":"5080_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.92,"source_file":"pi/packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts","weight":1.0},
+    {"source":"5724_test","target":"5080_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/test/suite/regressions/5724-sigterm-signal-exit.test.ts","weight":1.0},
+    {"source":"5080_test","target":"5724_test","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts","weight":1.0},
+
+    {"source":"2860_test","target":"concept_session_replacement","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/2860-replaced-session-context.test.ts","weight":1.0},
+    {"source":"2753_test","target":"2860_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/test/suite/regressions/2753-reload-stale-resource-settings.test.ts","weight":1.0},
+    {"source":"3688_test","target":"2860_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.7,"source_file":"pi/packages/coding-agent/test/suite/regressions/3688-tree-cancel-compacting.test.ts","weight":1.0},
+
+    {"source":"3982_test","target":"concept_message_end_hooks","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts","weight":1.0},
+    {"source":"1717_2113_test","target":"concept_message_end_hooks","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/1717-2113-agent-session-event-settlement.test.ts","weight":1.0},
+    {"source":"1717_2113_test","target":"3982_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.88,"source_file":"pi/packages/coding-agent/test/suite/regressions/1717-2113-agent-session-event-settlement.test.ts","weight":1.0},
+    {"source":"1717_2113_test","target":"2023_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.75,"source_file":"pi/packages/coding-agent/test/suite/regressions/1717-2113-agent-session-event-settlement.test.ts","weight":1.0},
+
+    {"source":"3686_test","target":"concept_message_end_hooks","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.7,"source_file":"pi/packages/coding-agent/test/suite/regressions/3686-session-name-event.test.ts","weight":1.0},
+
+    {"source":"2781_test","target":"concept_skill_precedence","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/2781-skill-collision-precedence.test.ts","weight":1.0},
+    {"source":"2781_test","target":"concept_skill_precedence","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/2781-skill-collision-precedence.test.ts","weight":1.0},
+
+    {"source":"3302_test","target":"concept_fd_fullpath","relation":"references","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/3302-find-path-glob.test.ts","weight":1.0},
+    {"source":"3303_test","target":"3302_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/coding-agent/test/suite/regressions/3303-find-nested-gitignore.test.ts","weight":1.0},
+    {"source":"3303_test","target":"concept_fd_fullpath","relation":"conceptually_related_to","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/test/suite/regressions/3303-find-nested-gitignore.test.ts","weight":1.0},
+    {"source":"3303_test","target":"3302_test","relation":"rationale_for","confidence":"EXTRACTED","confidence_score":1.0,"source_file":"pi/packages/coding-agent/test/suite/regressions/3303-find-nested-gitignore.test.ts","weight":1.0},
+
+    {"source":"5303_test","target":"5208_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.85,"source_file":"pi/packages/coding-agent/test/suite/regressions/5303-bash-output-truncation.test.ts","weight":1.0},
+    {"source":"5208_test","target":"5303_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.8,"source_file":"pi/packages/coding-agent/test/suite/regressions/5208-late-bash-output.test.ts","weight":1.0},
+
+    {"source":"3616_test","target":"2753_test","relation":"semantically_similar_to","confidence":"INFERRED","confidence_score":0.82,"source_file":"pi/packages/coding-agent/test/suite/regressions/3616-settings-inmemory-reload.test.ts","weight":1.0},
+
+    {"source":"5661_test","target":"5596_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.7,"source_file":"pi/packages/coding-agent/test/suite/regressions/5661-uppercase-header-values.test.ts","weight":1.0},
+
+    {"source":"2791_test","target":"3217_test","relation":"shares_data_with","confidence":"INFERRED","confidence_score":0.65,"source_file":"pi/packages/coding-agent/test/suite/regressions/2791-fswatch-error-crash.test.ts","weight":1.0}
+  ],
+  "hyperedges": [
+    {"nodes":["3592_test","5109_test","2835_test","concept_tool_filtering"],"relation":"tool_filtering_cluster","confidence":"INFERRED","confidence_score":0.92,"source_file":"pi/packages/coding-agent/test/suite/regressions/5109-exclude-tools.test.ts"},
+    {"nodes":["5080_test","5724_test","concept_shutdown_ordering"],"relation":"signal_shutdown_ordering_cluster","confidence":"INFERRED","confidence_score":0.93,"source_file":"pi/packages/coding-agent/test/suite/regressions/5080-signal-shutdown-extension-cleanup.test.ts"},
+    {"nodes":["3982_test","1717_2113_test","concept_message_end_hooks"],"relation":"message_end_hook_cluster","confidence":"INFERRED","confidence_score":0.9,"source_file":"pi/packages/coding-agent/test/suite/regressions/3982-message-end-cost-override.test.ts"}
+  ]
+}

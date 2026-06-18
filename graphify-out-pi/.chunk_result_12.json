@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {"id": "reload-runtime_reload_command", "label": "Reload Command (/reload-runtime)", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/reload-runtime.ts", "source_location": "pi.registerCommand('reload-runtime')"},
+    {"id": "reload-runtime_reload_tool", "label": "reload_runtime Tool", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/reload-runtime.ts", "source_location": "pi.registerTool({name:'reload_runtime'})"},
+    {"id": "rpc-demo_extension", "label": "RPC UI Demo Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/rpc-demo.ts", "source_location": "export default"},
+    {"id": "rpc-demo_dangerous_bash_gate", "label": "RPC Demo Dangerous Bash Select", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/rpc-demo.ts", "source_location": "pi.on('tool_call')"},
+    {"id": "custom-footer_extension", "label": "Custom Footer Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/custom-footer.ts", "source_location": "export default"},
+    {"id": "input-transform-streaming_gate", "label": "Streaming-Aware Input Gate", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/input-transform-streaming.ts", "source_location": "pi.on('input')"},
+    {"id": "trigger-compact_extension", "label": "Trigger Compaction Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/trigger-compact.ts", "source_location": "export default"},
+    {"id": "qna_extension", "label": "Q&A Question Extraction Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/qna.ts", "source_location": "pi.registerCommand('qna')"},
+    {"id": "preset_extension", "label": "Preset Configuration Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts", "source_location": "presetExtension"},
+    {"id": "overlay-test_extension", "label": "Overlay Test Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/overlay-test.ts", "source_location": "pi.registerCommand('overlay-test')"},
+    {"id": "github-issue-autocomplete_extension", "label": "GitHub Issue Autocomplete Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/github-issue-autocomplete.ts", "source_location": "export default"},
+    {"id": "provider-payload_extension", "label": "Provider Payload Logger Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/provider-payload.ts", "source_location": "export default"},
+    {"id": "send-user-message_extension", "label": "Send User Message Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/send-user-message.ts", "source_location": "export default"},
+    {"id": "shutdown-command_extension", "label": "Shutdown Command Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/shutdown-command.ts", "source_location": "export default"},
+    {"id": "summarize_extension", "label": "Conversation Summarize Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/summarize.ts", "source_location": "pi.registerCommand('summarize')"},
+    {"id": "snake_extension", "label": "Snake Game Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/snake.ts", "source_location": "pi.registerCommand('snake')"},
+    {"id": "notify_extension", "label": "Terminal Notify Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/notify.ts", "source_location": "export default"},
+    {"id": "protected-paths_extension", "label": "Protected Paths Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/protected-paths.ts", "source_location": "export default"},
+    {"id": "modal-editor_extension", "label": "Modal Editor Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/modal-editor.ts", "source_location": "export default"},
+    {"id": "question_extension", "label": "Question Tool Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/question.ts", "source_location": "pi.registerTool({name:'question'})"},
+    {"id": "confirm-destructive_extension", "label": "Confirm Destructive Actions Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/confirm-destructive.ts", "source_location": "export default"},
+    {"id": "prompt-customizer_extension", "label": "Prompt Customizer Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/prompt-customizer.ts", "source_location": "promptCustomizer"},
+    {"id": "dynamic-tools_extension", "label": "Dynamic Tools Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/dynamic-tools.ts", "source_location": "dynamicToolsExtension"},
+    {"id": "permission-gate_extension", "label": "Permission Gate Extension", "file_type": "code", "source_file": "pi/packages/coding-agent/examples/extensions/permission-gate.ts", "source_location": "export default"},
+    {"id": "concept_tool_call_event", "label": "tool_call Lifecycle Event", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/rpc-demo.ts", "source_location": "pi.on('tool_call')"},
+    {"id": "concept_before_agent_start_systemprompt", "label": "before_agent_start System Prompt Injection", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts", "source_location": "pi.on('before_agent_start')"},
+    {"id": "concept_session_manager_branch", "label": "sessionManager.getBranch Conversation History", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/qna.ts", "source_location": "ctx.sessionManager.getBranch()"},
+    {"id": "concept_sendUserMessage", "label": "pi.sendUserMessage with deliverAs (steer/followUp)", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/send-user-message.ts", "source_location": "pi.sendUserMessage"},
+    {"id": "concept_custom_ui", "label": "ctx.ui.custom Component Factory", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/qna.ts", "source_location": "ctx.ui.custom"},
+    {"id": "concept_appendEntry_persistence", "label": "pi.appendEntry Session Persistence", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/snake.ts", "source_location": "pi.appendEntry"},
+    {"id": "concept_osc_terminal_notify", "label": "OSC 777 / OSC 99 / Windows Toast Notification", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/notify.ts", "source_location": "notify()"},
+    {"id": "concept_compact_ctx", "label": "ctx.compact Context Compaction", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/trigger-compact.ts", "source_location": "ctx.compact()"},
+    {"id": "concept_dangerous_command_detection", "label": "Dangerous Command Regex Detection", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/permission-gate.ts", "source_location": "dangerousPatterns"},
+    {"id": "concept_presets_json_config", "label": "presets.json Config (global+project merge)", "file_type": "document", "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts", "source_location": "loadPresets"}
+  ],
+  "edges": [
+    {"source": "reload-runtime_reload_tool", "target": "reload-runtime_reload_command", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/reload-runtime.ts", "weight": 1.0},
+    {"source": "reload-runtime_reload_tool", "target": "concept_sendUserMessage", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/reload-runtime.ts", "weight": 0.9},
+
+    {"source": "rpc-demo_extension", "target": "rpc-demo_dangerous_bash_gate", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/rpc-demo.ts", "weight": 1.0},
+    {"source": "rpc-demo_dangerous_bash_gate", "target": "concept_tool_call_event", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/rpc-demo.ts", "weight": 1.0},
+    {"source": "rpc-demo_dangerous_bash_gate", "target": "concept_dangerous_command_detection", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/rpc-demo.ts", "weight": 0.9},
+
+    {"source": "permission-gate_extension", "target": "concept_tool_call_event", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/permission-gate.ts", "weight": 1.0},
+    {"source": "permission-gate_extension", "target": "concept_dangerous_command_detection", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/permission-gate.ts", "weight": 1.0},
+    {"source": "rpc-demo_dangerous_bash_gate", "target": "permission-gate_extension", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.92, "source_file": "pi/packages/coding-agent/examples/extensions/rpc-demo.ts", "weight": 0.9},
+
+    {"source": "protected-paths_extension", "target": "concept_tool_call_event", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/protected-paths.ts", "weight": 1.0},
+    {"source": "protected-paths_extension", "target": "permission-gate_extension", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/examples/extensions/protected-paths.ts", "weight": 0.8},
+
+    {"source": "input-transform-streaming_gate", "target": "concept_sendUserMessage", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "pi/packages/coding-agent/examples/extensions/input-transform-streaming.ts", "weight": 0.7},
+    {"source": "send-user-message_extension", "target": "concept_sendUserMessage", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/send-user-message.ts", "weight": 1.0},
+    {"source": "input-transform-streaming_gate", "target": "send-user-message_extension", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.75, "source_file": "pi/packages/coding-agent/examples/extensions/input-transform-streaming.ts", "weight": 0.7},
+
+    {"source": "trigger-compact_extension", "target": "concept_compact_ctx", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/trigger-compact.ts", "weight": 1.0},
+
+    {"source": "qna_extension", "target": "concept_session_manager_branch", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/qna.ts", "weight": 1.0},
+    {"source": "qna_extension", "target": "concept_custom_ui", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/qna.ts", "weight": 1.0},
+
+    {"source": "summarize_extension", "target": "concept_session_manager_branch", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/summarize.ts", "weight": 1.0},
+    {"source": "summarize_extension", "target": "concept_custom_ui", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/summarize.ts", "weight": 1.0},
+    {"source": "summarize_extension", "target": "qna_extension", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "pi/packages/coding-agent/examples/extensions/summarize.ts", "weight": 0.85},
+
+    {"source": "custom-footer_extension", "target": "concept_session_manager_branch", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/custom-footer.ts", "weight": 0.9},
+
+    {"source": "preset_extension", "target": "concept_before_agent_start_systemprompt", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts", "weight": 1.0},
+    {"source": "preset_extension", "target": "concept_presets_json_config", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts", "weight": 1.0},
+    {"source": "preset_extension", "target": "concept_custom_ui", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts", "weight": 0.9},
+
+    {"source": "prompt-customizer_extension", "target": "concept_before_agent_start_systemprompt", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/prompt-customizer.ts", "weight": 1.0},
+    {"source": "prompt-customizer_extension", "target": "preset_extension", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.82, "source_file": "pi/packages/coding-agent/examples/extensions/prompt-customizer.ts", "weight": 0.8},
+
+    {"source": "overlay-test_extension", "target": "concept_custom_ui", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/overlay-test.ts", "weight": 0.9},
+    {"source": "question_extension", "target": "concept_custom_ui", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/question.ts", "weight": 0.9},
+    {"source": "snake_extension", "target": "concept_custom_ui", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/snake.ts", "weight": 0.9},
+
+    {"source": "snake_extension", "target": "concept_appendEntry_persistence", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/snake.ts", "weight": 1.0},
+    {"source": "preset_extension", "target": "concept_appendEntry_persistence", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts", "weight": 0.9},
+
+    {"source": "notify_extension", "target": "concept_osc_terminal_notify", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "pi/packages/coding-agent/examples/extensions/notify.ts", "weight": 1.0},
+
+    {"source": "modal-editor_extension", "target": "snake_extension", "relation": "shares_data_with", "confidence": "INFERRED", "confidence_score": 0.6, "source_file": "pi/packages/coding-agent/examples/extensions/modal-editor.ts", "weight": 0.5},
+
+    {"source": "confirm-destructive_extension", "target": "rpc-demo_extension", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "pi/packages/coding-agent/examples/extensions/confirm-destructive.ts", "weight": 0.8},
+
+    {"source": "github-issue-autocomplete_extension", "target": "provider-payload_extension", "relation": "conceptually_related_to", "confidence": "AMBIGUOUS", "confidence_score": 0.3, "source_file": "pi/packages/coding-agent/examples/extensions/github-issue-autocomplete.ts", "weight": 0.3},
+
+    {"source": "dynamic-tools_extension", "target": "shutdown-command_extension", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.65, "source_file": "pi/packages/coding-agent/examples/extensions/dynamic-tools.ts", "weight": 0.6},
+
+    {"source": "shutdown-command_extension", "target": "confirm-destructive_extension", "relation": "conceptually_related_to", "confidence": "AMBIGUOUS", "confidence_score": 0.2, "source_file": "pi/packages/coding-agent/examples/extensions/shutdown-command.ts", "weight": 0.2}
+  ],
+  "hyperedges": [
+    {"id": "he_dangerous_bash_guards", "nodes": ["permission-gate_extension", "rpc-demo_dangerous_bash_gate", "protected-paths_extension"], "relation": "co-occurring guards on tool_call", "source_file": "pi/packages/coding-agent/examples/extensions/permission-gate.ts"},
+    {"id": "he_prompt_modification_chain", "nodes": ["preset_extension", "prompt-customizer_extension", "concept_before_agent_start_systemprompt"], "relation": "before_agent_start system prompt mutation", "source_file": "pi/packages/coding-agent/examples/extensions/preset.ts"},
+    {"id": "he_branch_history_consumers", "nodes": ["qna_extension", "summarize_extension", "custom-footer_extension", "concept_session_manager_branch"], "relation": "consume conversation branch via sessionManager.getBranch", "source_file": "pi/packages/coding-agent/examples/extensions/qna.ts"}
+  ]
+}
