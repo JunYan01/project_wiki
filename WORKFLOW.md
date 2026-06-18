@@ -102,11 +102,26 @@ uv run graphify install                 # 把 graphify skill 注册到 Claude Co
   - chunk 结果：`chunk_N.json` / `.chunk_result_N.json`，最后用 `merge_chunk.py` 合并去重。
 - **最终产物**：`GRAPH_REPORT.md`（报告）、`graph.html`（社区级可视化）。
 
-### 5.3 更新产物
-源码子模块更新后（见 4.2），对 `graphify-out-<repo>/` 重新跑 graphify，再提交新产物：
+### 5.3 更新产物（增量优先）
+
+源码子模块更新后（见 4.2），对应图谱的更新分两种——**增量优先**，只在必要时全量重建。
+
+**① 增量更新（默认，便宜）**——只重提取变更文件，复用 `.graphify_cached.json` 缓存：
 ```bash
-git commit -am "重新生成 <repo> 知识图谱产物"
+git -C <repo> fetch --depth=1 origin <默认分支> && git -C <repo> checkout FETCH_HEAD   # 拉最新
+uv run graphify <repo> --update        # 仅变更文件重提取；纯代码 AST 本地重建不走 LLM
+git add graphify-out-<repo> && git commit -m "增量更新 <repo> 知识图谱" && git push
 ```
+
+**② 全量重建（仅在大改 / 缓存损坏时）**：
+```bash
+mv graphify-out graphify-out-<repo>           # 先移走旧产物保护（见 §5.4）
+# 在 Claude Code 里触发 skill 全量跑：  /graphify <repo>
+mv graphify-out graphify-out-<repo>           # 重命名新结果
+```
+
+> **自动同步（可选）**：graphify 支持 `--watch` 或 git post-commit hook，提交后自动重建（适合自己维护的活跃仓）。
+> 工具选型与增量 / 缓存的横向对比见 [COMPARISON.md](COMPARISON.md)。
 
 ### 5.4 输出目录命名（graphify-out-<repo>）与查询指定
 
